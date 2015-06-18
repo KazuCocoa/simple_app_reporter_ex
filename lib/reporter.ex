@@ -1,0 +1,2 @@
+defmodule Reporter do
+end
