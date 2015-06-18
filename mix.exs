@@ -12,12 +12,13 @@ defmodule Reporter.Mixfile do
 
   def application do
     [
-      applications: [:logger, :poison]
+      applications: [:logger, :httpoison, :poison]
     ]
   end
 
   defp deps do
     [
+      {:httpoison, "~> 0.7"},
       {:poison, "~> 1.4.0"}
     ]
   end
