@@ -1,6 +1,8 @@
 defmodule Reporter.GooglePlay do
   alias Reporter.GooglePlay
 
+  use HTTPoison.Base
+
   defstruct droid_uri: Application.get_env(:reporter, :droid_uri),
             droid_package: Application.get_env(:reporter, :droid_package)
 

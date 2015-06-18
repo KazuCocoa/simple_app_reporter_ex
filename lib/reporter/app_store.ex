@@ -1,6 +1,8 @@
 defmodule Reporter.AppStore do
   alias Reporter.AppStore
 
+  use HTTPoison.Base
+
   defstruct host: Application.get_env(:reporter, :app_host),
             app_id: Application.get_env(:reporter, :app_id)
 
