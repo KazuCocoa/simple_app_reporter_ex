@@ -17,7 +17,31 @@ defmodule Reporter.AppStore do
 
   def entry(json) do
     Poison.Parser.parse!(json)["feed"]["entry"]
-    |> List.first
+    |> Enum.at(0)
+  end
+
+  @doc ~S"""
+  Returns collection of reviews.
+
+  ## Examples
+
+    iex> File.read!("./test/data/ios_review.json") |> Reporter.AppStore.reviews |> Enum.at(0)
+    %{"author" => %{"label" => "", "name" => %{"label" => "m.aaa..."},
+      "uri" => %{"label" => "https://itunes.apple.com/jp/reviews/id451145371"}},
+      "content" => %{"attributes" => %{"type" => "text"},
+      "label" => "利便性がわかりずらい"},
+      "id" => %{"label" => "1205430410"},
+      "im:contentType" => %{"attributes" => %{"label" => "アプリケーション",
+      "term" => "Application"}}, "im:rating" => %{"label" => "4"},
+      "im:version" => %{"label" => "3.3"}, "im:voteCount" => %{"label" => "0"},
+      "im:voteSum" => %{"label" => "0"},
+      "link" => %{"attributes" => %{"href" => "https://itunes.apple.com/jp/review?id=375380948&type=Purple%20Software",
+      "rel" => "related"}}, "title" => %{"label" => "あまり"}}
+
+  """
+  def reviews(json) do
+    Poison.Parser.parse!(json)["feed"]["entry"]
+    |> Enum.drop(1)
   end
 
   def icon(json) do

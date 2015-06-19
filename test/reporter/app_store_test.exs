@@ -23,7 +23,12 @@ defmodule Reporter.AppStoreTest do
 
   test "AppStore.entry", %{json: json} do
     entry = AppStore.entry(json)
-    assert entry["category"] != nil
+    assert Enum.count(entry) == 11
+  end
+
+  test "AppStore.reviews", %{json: json} do
+    reviews = AppStore.reviews(json)
+    assert Enum.count(reviews) == 50
   end
 
   test "AppStore.icon", %{json: json} do
