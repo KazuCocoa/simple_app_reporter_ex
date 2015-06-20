@@ -3,13 +3,19 @@
 `Reporter` is simple reporting App reviews library.
 Support AppStore and GooglePlay.
 
+## Installation
+
+First, add Reporter to your `mix.exs` dependencies:
+
+```elixir
+def deps do
+  [{:reporter, "~> 0.0.1"}]
+end
+```
+
+and run `$ mix deps.get`.
+
 ## Usage
-
-Poison.Parser.parse!(json)["feed"]["entry"]
-|> Enum.drop(1)
-
-|> Enum.each(fn(item) -> IO.inspect("#{item["im:rating"]["label"]}, #{item["content"]["label"]}") end)
-
 ### Getting reviews from AppStore
 #### JSON
 
