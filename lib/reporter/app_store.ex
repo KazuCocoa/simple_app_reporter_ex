@@ -1,9 +1,7 @@
 defmodule Reporter.AppStore do
   alias Reporter.AppStore
 
-  defstruct host: Application.get_env(:reporter, :app_host),
-            app_id: Application.get_env(:reporter, :app_id)
-
+  defstruct host: Application.get_env(:reporter, :app_host)
 
   @doc """
   Return full JSON map.
