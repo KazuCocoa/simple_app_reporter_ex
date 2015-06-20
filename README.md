@@ -1,5 +1,7 @@
-Reporter
-========
+# About
+
+`Reporter` is simple reporting App reviews library.
+Support AppStore and GooglePlay.
 
 ## Usage
 
@@ -39,3 +41,6 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 ### Getting reviews from GooglePlay
 
 Implementing...
+
+# LICENSE
+license is MIT
