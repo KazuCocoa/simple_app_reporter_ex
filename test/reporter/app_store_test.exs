@@ -9,8 +9,8 @@ defmodule Reporter.AppStoreTest do
     {:ok, json: json}
   end
 
-  test "AppStore.parse_to_map", %{json: json} do
-    assert AppStore.parse_to_map(json) != nil
+  test "AppStore.all_json", %{json: json} do
+    assert AppStore.all_json(json) != nil
   end
 
   test "AppStore.author", %{json: json} do

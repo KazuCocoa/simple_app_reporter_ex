@@ -8,8 +8,15 @@ defmodule Reporter.AppStore do
   @doc """
   Return full JSON map.
   """
-  def all(json) do
+  def all_json(json) do
     Poison.Parser.parse!(json)
+  end
+
+  @doc """
+  Return full XML via Quinn.parse(xml).
+  """
+  def all_xml(xml) do
+    Quinn.parse(xml)
   end
 
   @doc ~S"""

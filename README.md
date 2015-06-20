@@ -8,7 +8,7 @@ Poison.Parser.parse!(json)["feed"]["entry"]
 
 |> Enum.each(fn(item) -> IO.inspect("#{item["im:rating"]["label"]}, #{item["content"]["label"]}") end)
 
-### Getting review of AppStore
+### Getting reviews from AppStore
 #### JSON
 
 ```elixir
@@ -20,17 +20,22 @@ iex> Reporter.app_store_rss_json("375380948", "jp")
 
 ```elixir
 iex> Reporter.app_store_rss_json("375380948", "jp")
-     |> Reporter.AppStore.all
+     |> Reporter.AppStore.all_json
 
 # Return full JSON.
 ```
 
 #### XML
 
-Only implemented xml body.
+Only implemented getting parsed XML.
 
 ```elixir
 iex> Reporter.app_store_rss_xml("375380948", "jp")
+     |> Reporter.AppStore.all_xml
 
 # Return HTTP body.
 ```
+
+### Getting reviews from GooglePlay
+
+Implementing...
