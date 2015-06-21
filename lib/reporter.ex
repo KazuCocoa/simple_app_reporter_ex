@@ -6,17 +6,13 @@ defmodule Reporter do
   Get JSON formatted response from Apple Server.
   """
   @spec app_store_rss_json(String.t, String.t) :: JSON
-  def app_store_rss_json(app_id, locate \\ "en") do
-    get_body(HTTPoison.get(AppStore.rss_json(app_id, locate)))
-  end
+  def app_store_rss_json(app_id, locate \\ "en"), do: get_body(HTTPoison.get(AppStore.rss_json(app_id, locate)))
 
   @doc """
   Get XML formatted response from Apple Server.
   """
   @spec app_store_rss_xml(String.t, String.t) :: XML
-  def app_store_rss_xml(app_id, locate \\ "en") do
-    get_body(HTTPoison.get(AppStore.rss_xml(app_id, locate)))
-  end
+  def app_store_rss_xml(app_id, locate \\ "en"), do: get_body(HTTPoison.get(AppStore.rss_xml(app_id, locate)))
 
   defp get_body(response) do
     case response do

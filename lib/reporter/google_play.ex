@@ -19,9 +19,8 @@ defmodule Reporter.GooglePlay do
     "id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=0&hl=jp"
   """
   @spec review_post(String.t, String.t) :: String.t
-  def review_post(droid_package, locale \\ "en") do
-    post_message(droid_package, "0", locale)
-  end
+  def review_post(droid_package, locale \\ "en"),
+    do: post_message(droid_package, "0", locale)
 
   @doc ~S"""
   Return POST message with paging.
@@ -35,10 +34,8 @@ defmodule Reporter.GooglePlay do
     "id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=10&hl=jp"
   """
   @spec review_post_page(String.t, String.t, String.t) :: String.t
-  def review_post_page(droid_package, page_num, locale \\ "en") do
-    post_message(droid_package, page_num, locale)
-  end
-
+  def review_post_page(droid_package, page_num, locale \\ "en"),
+    do: post_message(droid_package, page_num, locale)
 
   defp post_message(droid_package, page_num, locale) do
     Enum.join([

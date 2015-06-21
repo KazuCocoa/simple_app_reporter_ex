@@ -6,16 +6,12 @@ defmodule Reporter.AppStore do
   @doc """
   Return full JSON map.
   """
-  def all_json(json) do
-    Poison.Parser.parse!(json)
-  end
+  def all_json(json), do: Poison.Parser.parse!(json)
 
   @doc """
   Return full XML via Quinn.parse(xml).
   """
-  def all_xml(xml) do
-    Quinn.parse(xml)
-  end
+  def all_xml(xml), do: Quinn.parse(xml)
 
   @doc ~S"""
   Returns collection of reviews.
@@ -27,10 +23,7 @@ defmodule Reporter.AppStore do
       "uri" => %{"label" => "http://www.apple.com/jp/itunes/"}}
 
   """
-  def author(json) do
-    Poison.Parser.parse!(json)["feed"]["author"]
-  end
-
+  def author(json), do: Poison.Parser.parse!(json)["feed"]["author"]
 
   @doc ~S"""
   Returns collection of reviews.
@@ -66,10 +59,7 @@ defmodule Reporter.AppStore do
       "title" => %{"label" => "Apple Store - Apple"}}
 
   """
-  def entry(json) do
-    Poison.Parser.parse!(json)["feed"]["entry"]
-    |> Enum.at(0)
-  end
+  def entry(json), do: Poison.Parser.parse!(json)["feed"]["entry"] |> Enum.at(0)
 
   @doc ~S"""
   Returns collection of reviews.
@@ -90,10 +80,7 @@ defmodule Reporter.AppStore do
       "rel" => "related"}}, "title" => %{"label" => "あまり"}}
 
   """
-  def reviews(json) do
-    Poison.Parser.parse!(json)["feed"]["entry"]
-    |> Enum.drop(1)
-  end
+  def reviews(json), do: Poison.Parser.parse!(json)["feed"]["entry"] |> Enum.drop(1)
 
   @doc ~S"""
   Returns icon.
@@ -104,9 +91,7 @@ defmodule Reporter.AppStore do
     %{"label" => "http://itunes.apple.com/favicon.ico"}
 
   """
-  def icon(json) do
-    Poison.Parser.parse!(json)["feed"]["icon"]
-  end
+  def icon(json), do: Poison.Parser.parse!(json)["feed"]["icon"]
 
   @doc ~S"""
   Returns id.
@@ -117,9 +102,7 @@ defmodule Reporter.AppStore do
     %{"label" => "https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json"}
 
   """
-  def id(json) do
-    Poison.Parser.parse!(json)["feed"]["id"]
-  end
+  def id(json), do: Poison.Parser.parse!(json)["feed"]["id"]
 
   @doc ~S"""
   Returns collection of link.
@@ -141,9 +124,7 @@ defmodule Reporter.AppStore do
                     "rel" => "next"}}]
 
   """
-  def link(json) do
-    Poison.Parser.parse!(json)["feed"]["link"]
-  end
+  def link(json), do: Poison.Parser.parse!(json)["feed"]["link"]
 
   @doc ~S"""
   Returns rights.
@@ -154,9 +135,7 @@ defmodule Reporter.AppStore do
     %{"label" => "Copyright 2008 Apple Inc."}
 
   """
-  def rights(json) do
-    Poison.Parser.parse!(json)["feed"]["rights"]
-  end
+  def rights(json), do: Poison.Parser.parse!(json)["feed"]["rights"]
 
   @doc ~S"""
   Returns collection of title.
@@ -167,10 +146,7 @@ defmodule Reporter.AppStore do
     %{"label" => "iTunes Store: カスタマーレビュー"}
 
   """
-  def title(json) do
-    Poison.Parser.parse!(json)["feed"]["title"]
-  end
-
+  def title(json), do: Poison.Parser.parse!(json)["feed"]["title"]
 
   @doc ~S"""
   Returns time of updated.
@@ -181,10 +157,7 @@ defmodule Reporter.AppStore do
     %{"label" => "2015-06-18T07:17:49-07:00"}
 
   """
-  def updated(json) do
-    Poison.Parser.parse!(json)["feed"]["updated"]
-  end
-
+  def updated(json), do: Poison.Parser.parse!(json)["feed"]["updated"]
 
   @doc ~S"""
   Return URLs with JSON.
@@ -198,9 +171,7 @@ defmodule Reporter.AppStore do
     "https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json"
   """
   @spec rss_json(String.t, String.t) :: String.t
-  def rss_json(app_id, locale \\ "en") do
-    rss(app_id, locale, "json")
-  end
+  def rss_json(app_id, locale \\ "en"), do: rss(app_id, locale, "json")
 
   @doc ~S"""
   Return URLs with XML.
@@ -214,9 +185,7 @@ defmodule Reporter.AppStore do
     "https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/xml"
   """
   @spec rss_xml(String.t, String.t) :: String.t
-  def rss_xml(app_id, locale \\ "en") do
-    rss(app_id, locale, "xml")
-  end
+  def rss_xml(app_id, locale \\ "en"), do: rss(app_id, locale, "xml")
 
   defp rss(app_id, locale, format) do
     Enum.join([
