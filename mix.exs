@@ -8,6 +8,8 @@ defmodule Reporter.Mixfile do
       app: :reporter,
       version: @version,
       elixir: "~> 1.0",
+      name: "Reporter",
+      source_url: "https://github.com/KazuCocoa/simple_app_reporter_ex",
       description: "Simple getting reviews library from AppStore and GooglePlay",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
