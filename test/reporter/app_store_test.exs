@@ -5,7 +5,7 @@ defmodule Reporter.AppStoreTest do
   alias Reporter.AppStore
 
   setup_all do
-    json = File.read!("./test/data/ios_review.json")
+    json = File.read!("./test/data/ios_review.json") |> Poison.decode!
     {:ok, json: json}
   end
 
