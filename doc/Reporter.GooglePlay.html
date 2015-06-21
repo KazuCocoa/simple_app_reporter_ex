@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reporter.GooglePlay</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/elixir.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/highlight.pack.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      hljs.initHighlightingOnLoad();
+      hljs.configure({languages: []}); //disable autodetect
+    </script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <section id="content">
+      <div class="breadcrumbs">Reporter v0.1.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.GooglePlay.html">GooglePlay</a></div>
+      <h1>
+        Reporter.GooglePlay
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+
+      
+        <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L1" class="view_source">Source</a>
+      
+
+      
+        <h2 id="summary">Summary<span class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></span></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#params_with_page/3">params_with_page(droid_package, page_num, locale \\ &quot;en&quot;)</a></td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_bodies/1">review_bodies(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of review body</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_body_list/1">review_body_list(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of review body which exclude blank titles</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_infos/1">review_infos(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of review infos</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_title_list/1">review_title_list(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of review titles which exclude blank titles</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_titles/1">review_titles(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of review titles</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_url/2">review_url(droid_package, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Return POST message</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_url_with_page/3">review_url_with_page(droid_package, page_num, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Return POST message with paging</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#reviews/1">reviews(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return list of class ‘single-review’</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <section id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <section class="detail">
+  <div class="detail_header" id="params_with_page/3">
+    <span class="signature"><strong>params_with_page(droid_package, page_num, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#params_with_page/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L217" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_bodies/1">
+    <span class="signature"><strong>review_bodies(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_bodies/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of review body.</p>
+<h2>Example</h2>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_bodies |&gt; Enum.at(1)
+{“div”, [{"class", "review-body"}],
+[{“span”, [{"class", "review-title"}], ["Android5版"]},
+ “ なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 “,
+ {“div”, [{"class", "review-link"}, {"style", "display:none"}],
+  [{“a”,</p>
+<pre><code class="elixir">[{&quot;class&quot;, &quot;id-no-nav play-button tiny&quot;}, {&quot;href&quot;, &quot;#&quot;},
+ {&quot;target&quot;, &quot;_blank&quot;}], [&quot;全文を表示&quot;]}]}]}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L121" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_body_list/1">
+    <span class="signature"><strong>review_body_list(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_body_list/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of review body which exclude blank titles.</p>
+<h2>Example</h2>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_body_list |&gt; Enum.at(0)
+“ 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 “</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L132" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_infos/1">
+    <span class="signature"><strong>review_infos(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_infos/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of review infos.</p>
+<h2>Example</h2>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_infos |&gt; Enum.at(3)
+{“div”, [{"class", "review-info"}],
+[{"span", [{"class", "author-name"}],
+ [{"a",
+   [{"href", "/store/people/details?id=117395283570537705728"}],
+   ["Kiriya Nachi"]}]},
+{“span”, [{"class", "review-date"}], ["2015年6月20日"]},
+{“a”,
+ [{"class", "reviews-permalink"},
+  {"href",
+   "/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPSDFpVURHVWo1Q091QnlUS1RHcjdhWXZpWmJzczJ5eHc0c3BBZ2RHc1dtT3dIMFVZR1VuRjZlRTFnQWVfVjhCeU5qd191OUV1cmxETDg2bEtF"},
+  {"title", "このレビューへのリンクです"}], []},
+{“div”, [{"class", "review-source"}, {"style", "display:none"}],
+ []},
+{“div”, [{"class", "review-info-star-rating"}],
+ [{“div”,
+   [{“class”, “tiny-star star-rating-non-editable-container”},</p>
+<pre><code class="elixir">{&quot;aria-label&quot;,
+ &quot;5つ星のうち2つ星で評価しました&quot;}],</code></pre>
+<p>   [{“div”,</p>
+<pre><code class="elixir">[{&quot;class&quot;, &quot;current-rating&quot;}, {&quot;style&quot;, &quot;width: 40%;&quot;}],
+ []}]}]}]}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L103" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_title_list/1">
+    <span class="signature"><strong>review_title_list(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_title_list/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of review titles which exclude blank titles.</p>
+<h2>Example</h2>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_title_list
+["不具合多すぎ", "Android5版",
+"開いていたタブが消える", "文字が見辛い",
+"サファリで開設しようとしても何もログインできない",
+"ブックマーク劣化…", "唯一使えるブラウザ",
+"ソースコード",
+"アプリ検索してもGoogle playに飛ばされない",
+"フリーズし過ぎ", "動き", "おかしい…", "タブ",
+"サクサク動く。", "なんというか…", "使えない",
+"ホーム", "？", "ゴミ", "開いたタブか・・・",
+"急に強制終了", "コピーできない", "タブの",
+"画像が表示されない", "いつまで経っても",
+"問題が発生したため終了します", "不具合?",
+"おい、おい、"]</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L175" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_titles/1">
+    <span class="signature"><strong>review_titles(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_titles/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of review titles.</p>
+<h2>Example</h2>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_titles |&gt; Enum.at(0)
+{“span”, [{"class", "review-title"}], ["不具合多すぎ"]}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L152" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_url/2">
+    <span class="signature"><strong>review_url(droid_package, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_url/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>review_url(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a></li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Return POST message.</p>
+<h2>Examples</h2>
+<p>  iex&gt; Reporter.GooglePlay.review_url(“com.android.chrome”)
+  “<a href="https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=0&hl=en">https://play.google.com/store/getreviews?id=com.android.chrome&amp;reviewSortOrder=0&amp;reviewType=1&amp;pageNum=0&amp;hl=en</a>“</p>
+<p>  iex&gt; Reporter.GooglePlay.review_url(“com.android.chrome”, “jp”)
+  “<a href="https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=0&hl=jp">https://play.google.com/store/getreviews?id=com.android.chrome&amp;reviewSortOrder=0&amp;reviewType=1&amp;pageNum=0&amp;hl=jp</a>“</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L193" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_url_with_page/3">
+    <span class="signature"><strong>review_url_with_page(droid_package, page_num, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_url_with_page/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>review_url_with_page(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a></li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Return POST message with paging.</p>
+<h2>Examples</h2>
+<p>  iex&gt; Reporter.GooglePlay.review_url_with_page(“com.android.chrome”, “1”)
+  “<a href="https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=1&hl=en">https://play.google.com/store/getreviews?id=com.android.chrome&amp;reviewSortOrder=0&amp;reviewType=1&amp;pageNum=1&amp;hl=en</a>“</p>
+<p>  iex&gt; Reporter.GooglePlay.review_url_with_page(“com.android.chrome”, “10” , “jp”)
+  “<a href="https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=10&hl=jp">https://play.google.com/store/getreviews?id=com.android.chrome&amp;reviewSortOrder=0&amp;reviewType=1&amp;pageNum=10&amp;hl=jp</a>“</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L213" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="reviews/1">
+    <span class="signature"><strong>reviews(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#reviews/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return list of class ‘single-review’.</p>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.reviews |&gt; Enum.at(0)
+{“div”, [{"class", "single-review"}],
+[{“a”, [{"href", "/store/people/details?id=104642741116962989509"}],
+  [{“img”,</p>
+<pre><code class="elixir">[{&quot;class&quot;, &quot;author-image&quot;},
+ {&quot;alt&quot;, &quot;森本真治 avatar image&quot;},
+ {&quot;src&quot;,
+  &quot;https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=w48-c-h48&quot;}],
+[]}]},</code></pre>
+<p> {“div”,
+  [{“class”, “review-header”}, {“data-expand-target”, “”},
+   {“data-reviewid”,</p>
+<pre><code class="elixir">&quot;gp:AOqpTOG_ApTgL86SmNCfvsb9M_zf6KrN6SaZtJL40yOAD2GQxUzWS0XXjdEpOBsKHLMU1MHNj1Tfs27qlGN6GJw&quot;}],</code></pre>
+<p>  [{“div”, [{"class", "review-info"}],</p>
+<pre><code class="elixir">[{&quot;span&quot;, [{&quot;class&quot;, &quot;author-name&quot;}],
+  [{&quot;a&quot;,
+    [{&quot;href&quot;,
+      &quot;/store/people/details?id=104642741116962989509&quot;}],
+    [&quot;森本真治&quot;]}]},
+ {&quot;span&quot;, [{&quot;class&quot;, &quot;review-date&quot;}], [&quot;2015年6月20日&quot;]},
+ {&quot;a&quot;,
+  [{&quot;class&quot;, &quot;reviews-permalink&quot;},
+   {&quot;href&quot;,
+    &quot;/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPR19BcFRnTDg2U21OQ2Z2c2I5TV96ZjZLck42U2FadEpMNDB5T0FEMkdReFV6V1MwWFhqZEVwT0JzS0hMTVUxTUhOajFUZnMyN3FsR042R0p3&quot;},
+   {&quot;title&quot;, &quot;このレビューへのリンクです&quot;}], []},
+ {&quot;div&quot;,
+  [{&quot;class&quot;, &quot;review-source&quot;}, {&quot;style&quot;, &quot;display:none&quot;}], []},
+ {&quot;div&quot;, [{&quot;class&quot;, &quot;review-info-star-rating&quot;}],
+  [{&quot;div&quot;,
+    [{&quot;class&quot;, &quot;tiny-star star-rating-non-editable-container&quot;},
+     {&quot;aria-label&quot;,
+      &quot;5つ星のうち1つ星で評価しました&quot;}],
+    [{&quot;div&quot;,
+      [{&quot;class&quot;, &quot;current-rating&quot;}, {&quot;style&quot;, &quot;width: 20%;&quot;}],
+      []}]}]}]},</code></pre>
+<p>   {“div”, [{"class", "rate-review-wrapper"}],</p>
+<pre><code class="elixir">[{&quot;div&quot;,
+  [{&quot;class&quot;, &quot;play-button icon-button small rate-review&quot;},
+   {&quot;title&quot;, &quot;スパムとして報告します&quot;},
+   {&quot;data-rating&quot;, &quot;SPAM&quot;}],
+  [{&quot;div&quot;, [{&quot;class&quot;, &quot;icon spam-flag&quot;}], []}]},
+ {&quot;div&quot;,
+  [{&quot;class&quot;, &quot;play-button icon-button small rate-review&quot;},
+   {&quot;title&quot;, &quot;役に立ったことを報告します&quot;},
+   {&quot;data-rating&quot;, &quot;HELPFUL&quot;}],
+  [{&quot;div&quot;, [{&quot;class&quot;, &quot;icon thumbs-up&quot;}], []}]},
+ {&quot;div&quot;,
+  [{&quot;class&quot;, &quot;play-button icon-button small rate-review&quot;},
+   {&quot;title&quot;,
+    &quot;役に立たなかったことを報告します&quot;},
+   {&quot;data-rating&quot;, &quot;UNHELPFUL&quot;}],
+  [{&quot;div&quot;, [{&quot;class&quot;, &quot;icon thumbs-down&quot;}], []}]}]}]},</code></pre>
+<p> {“div”, [{"class", "review-body"}],
+  [{“span”, [{"class", "review-title"}], ["不具合多すぎ"]},
+   “ 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 “,
+   {“div”, [{"class", "review-link"}, {"style", "display:none"}],</p>
+<pre><code class="elixir">[{&quot;a&quot;,
+  [{&quot;class&quot;, &quot;id-no-nav play-button tiny&quot;}, {&quot;href&quot;, &quot;#&quot;},
+   {&quot;target&quot;, &quot;_blank&quot;}], [&quot;全文を表示&quot;]}]}]}]}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L70" class="view_source">Source</a>
+  
+</section>
+
+        </section>
+      
+
+      
+
+      
+    </section>
+  </body>
+</html>

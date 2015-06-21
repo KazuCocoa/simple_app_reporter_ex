@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reporter</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/elixir.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/highlight.pack.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      hljs.initHighlightingOnLoad();
+      hljs.configure({languages: []}); //disable autodetect
+    </script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <section id="content">
+      <div class="breadcrumbs">Reporter v0.1.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a></div>
+      <h1>
+        Reporter
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+
+      
+        <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter.ex#L1" class="view_source">Source</a>
+      
+
+      
+        <h2 id="summary">Summary<span class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></span></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#app_store_rss_json/2">app_store_rss_json(app_id, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Get JSON response decoded by Poison.decode! from Apple Server</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#app_store_rss_xml/2">app_store_rss_xml(app_id, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Get XML formatted response from Apple Server</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#google_play/2">google_play(package, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Get HTML formatted response from GooglePlay</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <section id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <section class="detail">
+  <div class="detail_header" id="app_store_rss_json/2">
+    <span class="signature"><strong>app_store_rss_json(app_id, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#app_store_rss_json/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>app_store_rss_json(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: JSON</li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Get JSON response decoded by Poison.decode! from Apple Server.</p>
+<p>error case</p>
+<h3>Not found</h3>
+<p>iex&gt; error = %{“message” =&gt; “not found.”, “status_code” =&gt; “404”}
+iex&gt; error[:status_code]
+“404”</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter.ex#L17" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="app_store_rss_xml/2">
+    <span class="signature"><strong>app_store_rss_xml(app_id, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#app_store_rss_xml/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>app_store_rss_xml(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: XML</li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Get XML formatted response from Apple Server.</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter.ex#L26" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="google_play/2">
+    <span class="signature"><strong>google_play(package, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#google_play/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>google_play(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: list</li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Get HTML formatted response from GooglePlay.</p>
+<h2>Example</h2>
+<p>error case</p>
+<h3>Not found</h3>
+<p>iex&gt; error = [status_code: "404", message: "Not found items."]
+iex&gt; error[:status_code]
+“404”</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter.ex#L47" class="view_source">Source</a>
+  
+</section>
+
+        </section>
+      
+
+      
+
+      
+    </section>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reporter.AppStore</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/elixir.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/highlight.pack.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      hljs.initHighlightingOnLoad();
+      hljs.configure({languages: []}); //disable autodetect
+    </script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <section id="content">
+      <div class="breadcrumbs">Reporter v0.1.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.AppStore.html">AppStore</a></div>
+      <h1>
+        Reporter.AppStore
+        
+      </h1>
+
+      <ul class="summary_links">
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+      </ul>
+
+      
+
+      
+        <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L1" class="view_source">Source</a>
+      
+
+      
+        <h2 id="summary">Summary<span class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></span></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#all_json/1">all_json(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Return full JSON map</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#all_xml/1">all_xml(xml)</a></td>
+  
+    <td class="summary_synopsis"><p>Return full XML via Quinn.parse(xml)</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#author/1">author(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns collection of reviews</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#entry/1">entry(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns collection of entry</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#icon/1">icon(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns icon</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#id/1">id(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns id</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#link/1">link(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns collection of link</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#reviews/1">reviews(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns collection of reviews</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#rights/1">rights(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns rights</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#rss_json/2">rss_json(app_id, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Return URLs with JSON</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#rss_xml/2">rss_xml(app_id, locale \\ &quot;en&quot;)</a></td>
+  
+    <td class="summary_synopsis"><p>Return URLs with XML</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#title/1">title(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns collection of title</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#updated/1">updated(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns time of updated</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <section id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <section class="detail">
+  <div class="detail_header" id="all_json/1">
+    <span class="signature"><strong>all_json(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#all_json/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return full JSON map.</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L9" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="all_xml/1">
+    <span class="signature"><strong>all_xml(xml)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#all_xml/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return full XML via Quinn.parse(xml).</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L14" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="author/1">
+    <span class="signature"><strong>author(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#author/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns collection of reviews.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.author
+  %{“name” =&gt; %{“label” =&gt; “iTunes Store”},</p>
+<pre><code class="elixir">&quot;uri&quot; =&gt; %{&quot;label&quot; =&gt; &quot;http://www.apple.com/jp/itunes/&quot;}}
+
+iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.decode! |&gt; Reporter.AppStore.author
+%{&quot;name&quot; =&gt; %{&quot;label&quot; =&gt; &quot;iTunes Store&quot;},
+  &quot;uri&quot; =&gt; %{&quot;label&quot; =&gt; &quot;http://www.apple.com/itunes/&quot;}}</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L31" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="entry/1">
+    <span class="signature"><strong>entry(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#entry/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns collection of entry.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.entry
+  %{“category” =&gt; %{“attributes” =&gt; %{“im:id” =&gt; “6012”,</p>
+<pre><code class="elixir">&quot;label&quot; =&gt; &quot;ライフスタイル&quot;,
+    &quot;scheme&quot; =&gt; &quot;https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&amp;uo=2&quot;,
+    &quot;term&quot; =&gt; &quot;Lifestyle&quot;}},
+&quot;id&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;im:bundleId&quot; =&gt; &quot;com.apple.store.Jolly&quot;,
+    &quot;im:id&quot; =&gt; &quot;375380948&quot;},
+  &quot;label&quot; =&gt; &quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;},
+&quot;im:artist&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/artist/apple/id284417353?mt=8&amp;uo=2&quot;},
+  &quot;label&quot; =&gt; &quot;Apple&quot;},
+&quot;im:contentType&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;label&quot; =&gt; &quot;アプリケーション&quot;,
+    &quot;term&quot; =&gt; &quot;Application&quot;}},
+&quot;im:image&quot; =&gt; [%{&quot;attributes&quot; =&gt; %{&quot;height&quot; =&gt; &quot;53&quot;},
+   &quot;label&quot; =&gt; &quot;http://is5.mzstatic.com/image/pf/us/r30/Purple1/v4/82/bd/90/82bd90c7-f673-718c-7c32-ad9db7591ea6/mzl.hfuxogmw.53x53-50.png&quot;},
+ %{&quot;attributes&quot; =&gt; %{&quot;height&quot; =&gt; &quot;75&quot;},
+   &quot;label&quot; =&gt; &quot;http://is1.mzstatic.com/image/pf/us/r30/Purple1/v4/82/bd/90/82bd90c7-f673-718c-7c32-ad9db7591ea6/mzl.hfuxogmw.75x75-65.png&quot;},
+ %{&quot;attributes&quot; =&gt; %{&quot;height&quot; =&gt; &quot;100&quot;},
+   &quot;label&quot; =&gt; &quot;http://is3.mzstatic.com/image/pf/us/r30/Purple1/v4/82/bd/90/82bd90c7-f673-718c-7c32-ad9db7591ea6/mzl.hfuxogmw.100x100-75.png&quot;}],
+&quot;im:name&quot; =&gt; %{&quot;label&quot; =&gt; &quot;Apple Store&quot;},
+&quot;im:price&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;amount&quot; =&gt; &quot;0.00000&quot;, &quot;currency&quot; =&gt; &quot;JPY&quot;},
+  &quot;label&quot; =&gt; &quot;入手&quot;},
+&quot;im:releaseDate&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;label&quot; =&gt; &quot;2011年9月21日&quot;},
+  &quot;label&quot; =&gt; &quot;2011-09-21T10:10:33-07:00&quot;},
+&quot;link&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;,
+    &quot;rel&quot; =&gt; &quot;alternate&quot;, &quot;type&quot; =&gt; &quot;text/html&quot;}},
+&quot;rights&quot; =&gt; %{&quot;label&quot; =&gt; &quot;© 2015 Apple Inc.&quot;},
+&quot;title&quot; =&gt; %{&quot;label&quot; =&gt; &quot;Apple Store - Apple&quot;}}</code></pre>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.entry
+  %{}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L70" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="icon/1">
+    <span class="signature"><strong>icon(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#icon/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns icon.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.icon
+  %{“label” =&gt; “<a href="http://itunes.apple.com/favicon.ico"}">http://itunes.apple.com/favicon.ico&quot;}</a></p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.icon
+  %{“label” =&gt; “<a href="http://itunes.apple.com/favicon.ico"}">http://itunes.apple.com/favicon.ico&quot;}</a></p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L121" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="id/1">
+    <span class="signature"><strong>id(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#id/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns id.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.id
+  %{“label” =&gt; “<a href="https://itunes.apple.com/jp/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}">https://itunes.apple.com/jp/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json&quot;}</a></p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.id
+  %{“label” =&gt; “<a href="https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}">https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json&quot;}</a></p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L134" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="link/1">
+    <span class="signature"><strong>link(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#link/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns collection of link.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.link
+  [%{“attributes” =&gt; %{“href” =&gt; “<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=jp&id=26105">https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=jp&amp;id=26105</a>“,</p>
+<pre><code class="elixir">&quot;rel&quot; =&gt; &quot;alternate&quot;, &quot;type&quot; =&gt; &quot;text/html&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;self&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/rss/customerreviews/page=1/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;first&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/rss/customerreviews/page=8/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;last&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/rss/customerreviews/page=1/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;previous&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/rss/customerreviews/page=2/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;next&quot;}}]</code></pre>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.link
+  [%{“attributes” =&gt; %{“href” =&gt; “<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=38">https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&amp;id=38</a>“,</p>
+<pre><code class="elixir">&quot;rel&quot; =&gt; &quot;alternate&quot;, &quot;type&quot; =&gt; &quot;text/html&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json&quot;,
+              &quot;rel&quot; =&gt; &quot;self&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;&quot;, &quot;rel&quot; =&gt; &quot;first&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;&quot;, &quot;rel&quot; =&gt; &quot;last&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;&quot;, &quot;rel&quot; =&gt; &quot;previous&quot;}},
+          %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;&quot;, &quot;rel&quot; =&gt; &quot;next&quot;}}]</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L167" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="reviews/1">
+    <span class="signature"><strong>reviews(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#reviews/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns collection of reviews.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.reviews |&gt; Enum.at(0)
+  %{“author” =&gt; %{“label” =&gt; “”, “name” =&gt; %{“label” =&gt; “m.aaa…”},</p>
+<pre><code class="elixir">&quot;uri&quot; =&gt; %{&quot;label&quot; =&gt; &quot;https://itunes.apple.com/jp/reviews/id451145371&quot;}},
+&quot;content&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;type&quot; =&gt; &quot;text&quot;},
+&quot;label&quot; =&gt; &quot;利便性がわかりずらい&quot;},
+&quot;id&quot; =&gt; %{&quot;label&quot; =&gt; &quot;1205430410&quot;},
+&quot;im:contentType&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;label&quot; =&gt; &quot;アプリケーション&quot;,
+&quot;term&quot; =&gt; &quot;Application&quot;}}, &quot;im:rating&quot; =&gt; %{&quot;label&quot; =&gt; &quot;4&quot;},
+&quot;im:version&quot; =&gt; %{&quot;label&quot; =&gt; &quot;3.3&quot;}, &quot;im:voteCount&quot; =&gt; %{&quot;label&quot; =&gt; &quot;0&quot;},
+&quot;im:voteSum&quot; =&gt; %{&quot;label&quot; =&gt; &quot;0&quot;},
+&quot;link&quot; =&gt; %{&quot;attributes&quot; =&gt; %{&quot;href&quot; =&gt; &quot;https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software&quot;,
+&quot;rel&quot; =&gt; &quot;related&quot;}}, &quot;title&quot; =&gt; %{&quot;label&quot; =&gt; &quot;あまり&quot;}}</code></pre>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.reviews
+  %{}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L99" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="rights/1">
+    <span class="signature"><strong>rights(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#rights/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns rights.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.rights
+  %{“label” =&gt; “Copyright 2008 Apple Inc.”}</p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.rights
+  %{“label” =&gt; “Copyright 2008 Apple Inc.”}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L181" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="rss_json/2">
+    <span class="signature"><strong>rss_json(app_id, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#rss_json/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>rss_json(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a></li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Return URLs with JSON.</p>
+<h2>Examples</h2>
+<p>  iex&gt; Reporter.AppStore.rss_json(“375380948”)
+  “<a href="https://itunes.apple.com/en/rss/customerreviews/id=375380948/sortby=mostrecent/json">https://itunes.apple.com/en/rss/customerreviews/id=375380948/sortby=mostrecent/json</a>“</p>
+<p>  iex&gt; Reporter.AppStore.rss_json(“375380948”, “jp”)
+  “<a href="https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json">https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json</a>“</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L223" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="rss_xml/2">
+    <span class="signature"><strong>rss_xml(app_id, locale \\ &quot;en&quot;)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#rss_xml/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+    <p>Specs:</p>
+    <ul class="spec">
+      
+        <li>rss_xml(<a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>, <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a>) :: <a href="http://elixir-lang.org/docs/stable/elixir/String.html#t:t/0">String.t</a></li>
+      
+    </ul>
+  
+  <section class="docstring">
+    <p>Return URLs with XML.</p>
+<h2>Examples</h2>
+<p>  iex&gt; Reporter.AppStore.rss_xml(“375380948”)
+  “<a href="https://itunes.apple.com/en/rss/customerreviews/id=375380948/sortby=mostrecent/xml">https://itunes.apple.com/en/rss/customerreviews/id=375380948/sortby=mostrecent/xml</a>“</p>
+<p>  iex&gt; Reporter.AppStore.rss_xml(“375380948”, “jp”)
+  “<a href="https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/xml">https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/xml</a>“</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L237" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="title/1">
+    <span class="signature"><strong>title(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#title/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns collection of title.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.title
+  %{“label” =&gt; “iTunes Store: カスタマーレビュー”}</p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.title
+  %{“label” =&gt; “iTunes Store: Customer Reviews”}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L195" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="updated/1">
+    <span class="signature"><strong>updated(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#updated/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns time of updated.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.updated
+  %{“label” =&gt; “2015-06-18T07:17:49-07:00”}</p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.updated
+  %{“label” =&gt; “2015-06-21T06:52:45-07:00”}</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L209" class="view_source">Source</a>
+  
+</section>
+
+        </section>
+      
+
+      
+
+      
+    </section>
+  </body>
+</html>
