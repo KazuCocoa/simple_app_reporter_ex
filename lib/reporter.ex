@@ -8,7 +8,7 @@ defmodule Reporter do
   """
   @spec app_store_rss_json(String.t, String.t) :: JSON
   def app_store_rss_json(app_id, locate \\ "en") do
-    headers = [{"Content-Type", "application/json; charset=UTF-8"}]
+    headers = [{"Accept", "application/json; charset=UTF-8"}]
     get_body(HTTPoison.get(AppStore.rss_json(app_id, locate), headers)) |> Poison.decode!
   end
 
@@ -17,7 +17,7 @@ defmodule Reporter do
   """
   @spec app_store_rss_xml(String.t, String.t) :: XML
   def app_store_rss_xml(app_id, locate \\ "en") do
-    headers = [{"Content-Type", "application/xml; charset=UTF-8"}]
+    headers = [{"Accept", "application/xml; charset=UTF-8"}]
     get_body(HTTPoison.get(AppStore.rss_xml(app_id, locate), headers))
   end
 
@@ -26,8 +26,14 @@ defmodule Reporter do
   """
   @spec google_play() :: String.t
   def google_play() do
-    headers = [{"Content-Type", "text/html; charset=UTF-8"}]
+    headers = [{"Accept", "text/html; charset=UTF-8"}]
     get_body(HTTPoison.post(GooglePlay.review_url("com.android.chrome", "jp"), "", headers))
+    |> String.replace("\\u003c", "<")
+    |> String.replace("\\u003e", ">")
+    |> String.replace("\\u003d", "=")
+    |> String.replace(~r/\\/, "")
+    |> Floki.parse
+    |> Enum.drop(1)
   end
 
   defp get_body(response) do
