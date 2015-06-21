@@ -59,7 +59,19 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 
 ### Getting reviews from GooglePlay
 
-Implementing...
+```elixir
+iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
+" 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "
+
+iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
+{"div", [{"class", "review-body"}],
+[{"span", [{"class", "review-title"}], ["Android5版"]},
+ " なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 ",
+ {"div", [{"class", "review-link"}, {"style", "display:none"}],
+  [{"a",
+    [{"class", "id-no-nav play-button tiny"}, {"href", "#"},
+     {"target", "_blank"}], ["全文を表示"]}]}]}
+```
 
 # LICENSE
 license is MIT

@@ -7,27 +7,27 @@ defmodule Reporter do
   Get JSON response decoded by Poison.decode! from Apple Server.
   """
   @spec app_store_rss_json(String.t, String.t) :: JSON
-  def app_store_rss_json(app_id, locate \\ "en") do
+  def app_store_rss_json(app_id, locale \\ "en") do
     headers = [{"Accept", "application/json; charset=UTF-8"}]
-    get_body(HTTPoison.get(AppStore.rss_json(app_id, locate), headers)) |> Poison.decode!
+    get_body(HTTPoison.get(AppStore.rss_json(app_id, locale), headers)) |> Poison.decode!
   end
 
   @doc """
   Get XML formatted response from Apple Server.
   """
   @spec app_store_rss_xml(String.t, String.t) :: XML
-  def app_store_rss_xml(app_id, locate \\ "en") do
+  def app_store_rss_xml(app_id, locale \\ "en") do
     headers = [{"Accept", "application/xml; charset=UTF-8"}]
-    get_body(HTTPoison.get(AppStore.rss_xml(app_id, locate), headers))
+    get_body(HTTPoison.get(AppStore.rss_xml(app_id, locale), headers))
   end
 
   @doc """
   Get HTML formatted response from GooglePlay.
   """
-  @spec google_play() :: String.t
-  def google_play() do
+  @spec google_play(String.t, String.t) :: String.t
+  def google_play(package, locale \\ "en") do
     headers = [{"Accept", "text/html; charset=UTF-8"}]
-    get_body(HTTPoison.post(GooglePlay.review_url("com.android.chrome", "jp"), "", headers))
+    get_body(HTTPoison.post(GooglePlay.review_url(package, locale), "", headers))
     |> String.replace("\\u003c", "<")
     |> String.replace("\\u003e", ">")
     |> String.replace("\\u003d", "=")
