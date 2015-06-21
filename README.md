@@ -3,19 +3,21 @@
 `Reporter` is simple reporting App reviews library.
 Support AppStore and GooglePlay.
 
+Hex is [here](https://hex.pm/packages/reporter)
+
 ## Installation
 
 First, add Reporter to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:reporter, "~> 0.0.1"}]
+  [{:reporter, "~> 0.1.1"}]
 end
 ```
 
 and run `$ mix deps.get`.
 
-## Usage
+# Usage
 ### Getting reviews from AppStore
 #### JSON
 
