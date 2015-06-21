@@ -24,6 +24,19 @@ iex> Reporter.app_store_rss_json("375380948", "jp")
      |> Reporter.AppStore.author
 %{"name" => %{"label" => "iTunes Store"},
   "uri" => %{"label" => "http://www.apple.com/jp/itunes/"}}
+
+iex> Reporter.app_store_rss_json("375380948", "jp") |> Reporter.AppStore.reviews |> Enum.at(0)
+%{"author" => %{"label" => "", "name" => %{"label" => "m.aaa..."},
+  "uri" => %{"label" => "https://itunes.apple.com/jp/reviews/id451145371"}},
+  "content" => %{"attributes" => %{"type" => "text"},
+  "label" => "利便性がわかりずらい"},
+  "id" => %{"label" => "1205430410"},
+  "im:contentType" => %{"attributes" => %{"label" => "アプリケーション",
+  "term" => "Application"}}, "im:rating" => %{"label" => "4"},
+  "im:version" => %{"label" => "3.3"}, "im:voteCount" => %{"label" => "0"},
+  "im:voteSum" => %{"label" => "0"},
+  "link" => %{"attributes" => %{"href" => "https://itunes.apple.com/jp/review?id=375380948&type=Purple%20Software",
+  "rel" => "related"}}, "title" => %{"label" => "あまり"}}
 ```
 
 ```elixir

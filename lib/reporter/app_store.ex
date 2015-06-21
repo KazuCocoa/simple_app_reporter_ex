@@ -31,7 +31,7 @@ defmodule Reporter.AppStore do
   def author(json), do: json["feed"]["author"]
 
   @doc ~S"""
-  Returns collection of reviews.
+  Returns collection of entry.
 
   ## Examples
 
