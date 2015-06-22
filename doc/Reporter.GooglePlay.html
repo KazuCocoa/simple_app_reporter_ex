@@ -25,7 +25,7 @@
     </script>
 
     <section id="content">
-      <div class="breadcrumbs">Reporter v0.1.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.GooglePlay.html">GooglePlay</a></div>
+      <div class="breadcrumbs">Reporter v0.1.2 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.GooglePlay.html">GooglePlay</a></div>
       <h1>
         Reporter.GooglePlay
         
@@ -74,6 +74,13 @@
   <td class="summary_signature"><a href="#review_infos/1">review_infos(parsed_html)</a></td>
   
     <td class="summary_synopsis"><p>Return list of review infos</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_summaries/1">review_summaries(parsed_html)</a></td>
+  
+    <td class="summary_synopsis"><p>Return summary of reviews as List</p>
 </td>
   
 </tr>
@@ -135,7 +142,7 @@
     
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L217" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L262" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -162,7 +169,7 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L121" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L153" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -183,7 +190,7 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L132" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L164" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -224,7 +231,29 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L103" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L102" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_summaries/1">
+    <span class="signature"><strong>review_summaries(parsed_html)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_summaries/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Return summary of reviews as List.</p>
+<p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_summaries |&gt; Enum.at(0)
+[date: “2015年6月20日”, author: “森本真治”, rating: 1.0,</p>
+<pre><code class="elixir">title: &quot;不具合多すぎ&quot;,
+      body: &quot; 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 &quot;]</code></pre>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L114" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -241,23 +270,36 @@
     <p>Return list of review titles which exclude blank titles.</p>
 <h2>Example</h2>
 <p>iex&gt; File.read!(“./test/data/google_post.html”) |&gt; Floki.parse |&gt; Enum.drop(1) |&gt; Reporter.GooglePlay.review_title_list
-["不具合多すぎ", "Android5版",
-"開いていたタブが消える", "文字が見辛い",
+["不具合多すぎ",
+"Android5版",
+"開いていたタブが消える",
+"文字が見辛い",
 "サファリで開設しようとしても何もログインできない",
-"ブックマーク劣化…", "唯一使えるブラウザ",
+"ブックマーク劣化…",
+"唯一使えるブラウザ",
 "ソースコード",
 "アプリ検索してもGoogle playに飛ばされない",
-"フリーズし過ぎ", "動き", "おかしい…", "タブ",
-"サクサク動く。", "なんというか…", "使えない",
-"ホーム", "？", "ゴミ", "開いたタブか・・・",
-"急に強制終了", "コピーできない", "タブの",
-"画像が表示されない", "いつまで経っても",
-"問題が発生したため終了します", "不具合?",
+"フリーズし過ぎ",
+"動き",
+"おかしい…",
+"タブ",
+"サクサク動く。",
+"なんというか…", "使えない",
+"ホーム", "？",
+"ゴミ",
+"開いたタブか・・・",
+"急に強制終了",
+"コピーできない",
+"タブの",
+"画像が表示されない",
+"いつまで経っても",
+"問題が発生したため終了します",
+"不具合?",
 "おい、おい、"]</p>
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L175" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L220" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -278,7 +320,7 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L152" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L184" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -308,7 +350,7 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L193" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L238" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -338,7 +380,7 @@
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L213" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/google_play.ex#L258" class="view_source">Source</a>
   
 </section>
 <section class="detail">
