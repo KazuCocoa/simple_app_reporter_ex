@@ -62,17 +62,27 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 ### Getting reviews from GooglePlay
 
 ```elixir
+
+# The following method provid us very useful summary.
+# You can get reviewd date, author, rating, title and body as List.
+iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+[date: "2015年6月20日", author: "森本真治", rating: 1.0,
+ title: "不具合多すぎ",
+ body: " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "]
+
+
 iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
 " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "
 
 iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
 {"div", [{"class", "review-body"}],
-[{"span", [{"class", "review-title"}], ["Android5版"]},
- " なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 ",
- {"div", [{"class", "review-link"}, {"style", "display:none"}],
-  [{"a",
+  [{"span", [{"class", "review-title"}], ["Android5版"]},
+  " なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 ",
+  {"div", [{"class", "review-link"}, {"style", "display:none"}],
+    [{"a",
     [{"class", "id-no-nav play-button tiny"}, {"href", "#"},
-     {"target", "_blank"}], ["全文を表示"]}]}]}
+      {"target", "_blank"}], ["全文を表示"]}]}]}
+
 ```
 
 # LICENSE

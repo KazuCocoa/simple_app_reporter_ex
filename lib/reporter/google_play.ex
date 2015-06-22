@@ -69,7 +69,6 @@ defmodule Reporter.GooglePlay do
   """
   def reviews(parsed_html), do: Floki.find(parsed_html, ".single-review")
 
-
   @doc ~S"""
   Return list of review infos.
 
@@ -101,6 +100,39 @@ defmodule Reporter.GooglePlay do
 
    """
   def review_infos(parsed_html), do: Floki.find(parsed_html, ".review-info")
+
+
+  @doc ~S"""
+  Return summary of reviews as List.
+
+  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+  [date: "2015年6月20日", author: "森本真治", rating: 1.0,
+            title: "不具合多すぎ",
+            body: " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "]
+
+  """
+  def review_summaries(parsed_html) do
+    Floki.find(parsed_html, ".single-review")
+    |> Enum.reduce([], fn(single, list) ->
+
+      {_, _, name} = Floki.find(single, ".author-name") |> Enum.at(0)
+      {_, _, name} = Enum.at(name, 0)
+
+      {_, _, date} = Floki.find(single, ".review-date") |> Enum.at(0)
+
+      {_, _, body} = Floki.find(single, ".review-body") |> Enum.at(0)
+      {_, _, title} = Enum.at(body, 0)
+      body = Enum.at(body, 1)
+
+      {_, rating, _} = Floki.find(single, ".current-rating") |> Enum.at(0)
+      {_, rating} = Enum.at(rating, 1)
+      rating = Regex.scan(~r/[0-9]+/, rating) |> List.flatten |> List.first |> String.to_integer
+      rating = rating / 20
+
+      result = [date: Enum.at(date, 0), author: Enum.at(name, 0), rating: rating, title: Enum.at(title, 0), body: body]
+      List.insert_at(list, -1, result)
+    end)
+  end
 
 
   @doc ~S"""
@@ -157,18 +189,31 @@ defmodule Reporter.GooglePlay do
   ## Example
 
   iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_title_list
-  ["不具合多すぎ", "Android5版",
-  "開いていたタブが消える", "文字が見辛い",
+  ["不具合多すぎ",
+  "Android5版",
+  "開いていたタブが消える",
+  "文字が見辛い",
   "サファリで開設しようとしても何もログインできない",
-  "ブックマーク劣化…", "唯一使えるブラウザ",
+  "ブックマーク劣化…",
+  "唯一使えるブラウザ",
   "ソースコード",
   "アプリ検索してもGoogle playに飛ばされない",
-  "フリーズし過ぎ", "動き", "おかしい…", "タブ",
-  "サクサク動く。", "なんというか…", "使えない",
-  "ホーム", "？", "ゴミ", "開いたタブか・・・",
-  "急に強制終了", "コピーできない", "タブの",
-  "画像が表示されない", "いつまで経っても",
-  "問題が発生したため終了します", "不具合?",
+  "フリーズし過ぎ",
+  "動き",
+  "おかしい…",
+  "タブ",
+  "サクサク動く。",
+  "なんというか…", "使えない",
+  "ホーム", "？",
+  "ゴミ",
+  "開いたタブか・・・",
+  "急に強制終了",
+  "コピーできない",
+  "タブの",
+  "画像が表示されない",
+  "いつまで経っても",
+  "問題が発生したため終了します",
+  "不具合?",
   "おい、おい、"]
 
   """
