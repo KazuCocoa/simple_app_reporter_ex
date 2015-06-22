@@ -63,8 +63,8 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 
 ```elixir
 
-# The following method provid us very useful summary.
-# You can get reviewd date, author, rating, title and body as List.
+# The following method provide us very useful summary.
+# You can get reviewed date, author, rating, title and body as List.
 iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
 [date: "2015年6月20日", author: "森本真治", rating: 1.0,
  title: "不具合多すぎ",
