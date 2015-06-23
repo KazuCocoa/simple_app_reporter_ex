@@ -25,7 +25,7 @@
     </script>
 
     <section id="content">
-      <div class="breadcrumbs">Reporter v0.1.2 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.AppStore.html">AppStore</a></div>
+      <div class="breadcrumbs">Reporter v0.1.3 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Reporter.html">Reporter</a> &rarr; <a href="Reporter.AppStore.html">AppStore</a></div>
       <h1>
         Reporter.AppStore
         
@@ -74,7 +74,7 @@
   
 </tr>
 <tr>
-  <td class="summary_signature"><a href="#entry/1">entry(json)</a></td>
+  <td class="summary_signature"><a href="#category/1">category(json)</a></td>
   
     <td class="summary_synopsis"><p>Returns collection of entry</p>
 </td>
@@ -98,6 +98,13 @@
   <td class="summary_signature"><a href="#link/1">link(json)</a></td>
   
     <td class="summary_synopsis"><p>Returns collection of link</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#review_summaries/1">review_summaries(json)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns list of reviews which are summarized</p>
 </td>
   
 </tr>
@@ -215,11 +222,11 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
   
 </section>
 <section class="detail">
-  <div class="detail_header" id="entry/1">
-    <span class="signature"><strong>entry(json)</strong></span>
+  <div class="detail_header" id="category/1">
+    <span class="signature"><strong>category(json)</strong></span>
     <div class="detail_header_links">
       <span class="detail_type">(function)</span>
-      <a href="#entry/1" class="detail_link" title="Link to this function">#</a>
+      <a href="#category/1" class="detail_link" title="Link to this function">#</a>
       <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
     </div>
   </div>
@@ -227,7 +234,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
   <section class="docstring">
     <p>Returns collection of entry.</p>
 <h2>Examples</h2>
-<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.entry
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.category
   %{“category” =&gt; %{“attributes” =&gt; %{“im:id” =&gt; “6012”,</p>
 <pre><code class="elixir">&quot;label&quot; =&gt; &quot;ライフスタイル&quot;,
     &quot;scheme&quot; =&gt; &quot;https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&amp;uo=2&quot;,
@@ -254,7 +261,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
     &quot;rel&quot; =&gt; &quot;alternate&quot;, &quot;type&quot; =&gt; &quot;text/html&quot;}},
 &quot;rights&quot; =&gt; %{&quot;label&quot; =&gt; &quot;© 2015 Apple Inc.&quot;},
 &quot;title&quot; =&gt; %{&quot;label&quot; =&gt; &quot;Apple Store - Apple&quot;}}</code></pre>
-<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.entry
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.category
   %{}</p>
 
   </section>
@@ -282,7 +289,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L121" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L148" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -305,7 +312,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L134" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L161" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -346,7 +353,30 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L167" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L194" class="view_source">Source</a>
+  
+</section>
+<section class="detail">
+  <div class="detail_header" id="review_summaries/1">
+    <span class="signature"><strong>review_summaries(json)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#review_summaries/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <section class="docstring">
+    <p>Returns list of reviews which are summarized.</p>
+<h2>Examples</h2>
+<p>  iex&gt; File.read!(“./test/data/ios_review.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.review_summaries |&gt; Enum.at(0)
+  [author: "m.aaa...", rating: "4", title: "あまり", body: "利便性がわかりずらい"]</p>
+<p>  iex&gt; File.read!(“./test/data/ios_review_empty.json”) |&gt; Poison.decode! |&gt; Reporter.AppStore.review_summaries
+  []</p>
+
+  </section>
+  
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L119" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -402,7 +432,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L181" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L208" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -432,7 +462,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L223" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L250" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -462,7 +492,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L237" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L264" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -485,7 +515,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L195" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L222" class="view_source">Source</a>
   
 </section>
 <section class="detail">
@@ -508,7 +538,7 @@ iex&gt; File.read!(&quot;./test/data/ios_review_empty.json&quot;) |&gt; Poison.d
 
   </section>
   
-    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L209" class="view_source">Source</a>
+    <a href="https://github.com/KazuCocoa/simple_app_reporter_ex/blob/master/lib/reporter/app_store.ex#L236" class="view_source">Source</a>
   
 </section>
 
