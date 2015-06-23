@@ -20,10 +20,10 @@ defmodule Reporter.AppStoreTest do
     author = AppStore.author(json_empty) != nil
   end
 
-  test "AppStore.entry", %{json: json, empty: json_empty} do
-    entry = AppStore.entry(json)
-    assert Enum.count(entry) == 11
-    assert AppStore.entry(json_empty) == %{}
+  test "AppStore.category", %{json: json, empty: json_empty} do
+    category = AppStore.category(json)
+    assert Enum.count(category) == 11
+    assert AppStore.category(json_empty) == %{}
   end
 
   test "AppStore.reviews", %{json: json, empty: json_empty} do

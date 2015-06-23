@@ -22,6 +22,12 @@ and run `$ mix deps.get`.
 #### JSON
 
 ```elixir
+# The following method provide us very useful summary.
+# You can get reviewed date, author, rating, title and body as List.
+iex> Reporter.app_store_rss_json("375380948", "jp") |> Reporter.AppStore.review_summaries |> Enum.at(0)
+[author: "m.aaa...", rating: "4", title: "あまり", body: "利便性がわかりずらい"]
+
+
 iex> Reporter.app_store_rss_json("375380948", "jp")
      |> Reporter.AppStore.author
 %{"name" => %{"label" => "iTunes Store"},
@@ -62,7 +68,6 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 ### Getting reviews from GooglePlay
 
 ```elixir
-
 # The following method provide us very useful summary.
 # You can get reviewed date, author, rating, title and body as List.
 iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
@@ -82,7 +87,6 @@ iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.rev
     [{"a",
     [{"class", "id-no-nav play-button tiny"}, {"href", "#"},
       {"target", "_blank"}], ["全文を表示"]}]}]}
-
 ```
 
 # LICENSE

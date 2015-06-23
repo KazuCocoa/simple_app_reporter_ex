@@ -35,7 +35,7 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.entry
+    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.category
     %{"category" => %{"attributes" => %{"im:id" => "6012",
           "label" => "ライフスタイル",
           "scheme" => "https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&uo=2",
@@ -63,14 +63,14 @@ defmodule Reporter.AppStore do
       "rights" => %{"label" => "© 2015 Apple Inc."},
       "title" => %{"label" => "Apple Store - Apple"}}
 
-    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.entry
+    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.category
     %{}
 
   """
-  def entry(json) do
+  def category(json) do
     case json["feed"]["entry"] do
       nil -> %{}
-      entry -> entry |> Enum.at(0)
+      category -> category |> Enum.at(0)
     end
   end
 
@@ -101,6 +101,33 @@ defmodule Reporter.AppStore do
       nil -> %{}
       entry -> entry |> Enum.drop(1)
     end
+  end
+
+
+  @doc ~S"""
+  Returns list of reviews which are summarized.
+
+  ## Examples
+
+    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.review_summaries |> Enum.at(0)
+    [author: "m.aaa...", rating: "4", title: "あまり", body: "利便性がわかりずらい"]
+
+    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.review_summaries
+    []
+
+  """
+  def review_summaries(json) do
+    json
+    |> reviews
+    |> Enum.reduce([], fn (review, list) ->
+      author = review["author"]["name"]["label"]
+      rating = review["im:rating"]["label"]
+      title = review["title"]["label"]
+      body = review["content"]["label"]
+
+      result = [author: author, rating: rating, title: title, body: body]
+      List.insert_at(list, -1, result)
+    end)
   end
 
 
