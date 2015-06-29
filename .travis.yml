@@ -1,0 +1,17 @@
+language: elixir
+otp_release:
+  - 17.4
+
+sudo: false
+
+before_script:
+  - mix local.hex --force
+  - mix deps.get -- only test
+
+script:
+  - mix test
+
+notifications:
+  slack:
+    secure: dREoGm6W0qj17FsaUOGk05/+hdzfIti5UNDVGqD+CoUUigElOJuY9TG9udH+aKp75ILtZ4gsnxFac9KxvTrMfMU+tYeuwfE7dZiApNz0e3G1gRYcbNym6z/z4GLR1F8or6XcHPmKwor5qJ/3e+u9ZbiqT3s4cgU4dFJN8xXxpms=
+
