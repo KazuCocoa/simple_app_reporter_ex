@@ -21,18 +21,11 @@ defmodule Reporter do
     |> Poison.decode!
   end
 
-  defp get_body_json({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
-    body
-  end
+  defp get_body_json({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
 
-  defp get_body_json({:ok, %HTTPoison.Response{status_code: 404}}) do
-    ~s({"status_code": "404", "message": "Not found items."})
-  end
+  defp get_body_json({:ok, %HTTPoison.Response{status_code: 404}}), do: ~s({"status_code": "404", "message": "Not found items."})
 
-  defp get_body_json({:error, %HTTPoison.Error{reason: reason}}) do
-    IO.inspect reason
-  end
-
+  defp get_body_json({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 
   @doc """
   Get XML formatted response from Apple Server.
@@ -44,18 +37,11 @@ defmodule Reporter do
     |> get_body
   end
 
-  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
-    body
-  end
+  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
 
-  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 404}}) do
-    ~s({"status_code": "404", "message": "Not found items."})
-  end
+  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 404}}), do: ~s({"status_code": "404", "message": "Not found items."})
 
-  defp get_body_xml({:error, %HTTPoison.Error{reason: reason}}) do
-    IO.inspect reason
-  end
-
+  defp get_body_xml({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 
   @doc """
   Get HTML formatted response from GooglePlay.
@@ -86,11 +72,7 @@ defmodule Reporter do
     |> Enum.drop(1)
   end
 
-  defp get_body({:ok, %HTTPoison.Response{status_code: 404}}) do
-    [status_code: "404", message: "Not found items."]
-  end
+  defp get_body({:ok, %HTTPoison.Response{status_code: 404}}), do: [status_code: "404", message: "Not found items."]
 
-  defp get_body({:error, %HTTPoison.Error{reason: reason}}) do
-    IO.inspect reason
-  end
+  defp get_body({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 end
