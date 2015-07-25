@@ -1,5 +1,9 @@
 defmodule Reporter do
 
+  # defmacro __using__(_) do
+  #
+  # end
+
   alias Reporter.AppStore
   alias Reporter.GooglePlay
 

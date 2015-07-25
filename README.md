@@ -70,23 +70,21 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 ```elixir
 # The following method provide us very useful summary.
 # You can get reviewed date, author, rating, title and body as List.
-iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
-[date: "2015年6月20日", author: "森本真治", rating: 1.0,
- title: "不具合多すぎ",
- body: " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "]
+iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+[date: "July 24, 2015", author: "Bobbins Francis", rating: 2.0, title: nil,
+ body: " Crashing a lot lot lot😡😣 "]
 
+iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
+" Crashing a lot lot lot😡😣 "
 
-iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
-" 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "
-
-iex> Reporter.google_play("com.android.chrome", "jp") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
+iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
 {"div", [{"class", "review-body"}],
-  [{"span", [{"class", "review-title"}], ["Android5版"]},
-  " なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 ",
+ [{"span", [{"class", "review-title"}], ["Not bad"]},
+  " Unable to download from chrome. ",
   {"div", [{"class", "review-link"}, {"style", "display:none"}],
-    [{"a",
-    [{"class", "id-no-nav play-button tiny"}, {"href", "#"},
-      {"target", "_blank"}], ["全文を表示"]}]}]}
+   [{"a",
+     [{"class", "id-no-nav play-button tiny"}, {"href", "#"},
+      {"target", "_blank"}], [" Full Review "]}]}]}
 ```
 
 # LICENSE
