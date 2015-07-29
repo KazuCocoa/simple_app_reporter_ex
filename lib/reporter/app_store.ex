@@ -119,6 +119,7 @@ defmodule Reporter.AppStore do
   def review_summaries(json) do
     json
     |> reviews
+    |> Enum.reverse
     |> Enum.reduce([], fn (review, list) ->
       author = review["author"]["name"]["label"]
       rating = review["im:rating"]["label"]
@@ -126,7 +127,7 @@ defmodule Reporter.AppStore do
       body = review["content"]["label"]
 
       result = [author: author, rating: rating, title: title, body: body]
-      List.insert_at(list, -1, result)
+      List.insert_at(list, 0, result)
     end)
   end
 
