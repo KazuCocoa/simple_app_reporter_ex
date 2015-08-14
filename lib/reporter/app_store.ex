@@ -110,7 +110,7 @@ defmodule Reporter.AppStore do
   ## Examples
 
     iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.review_summaries |> Enum.at(0)
-    [author: "m.aaa...", rating: "4", title: "あまり", body: "利便性がわかりずらい"]
+    %{"author" => "m.aaa...", "rating" => "4", "title" => "あまり", "body" => "利便性がわかりずらい"}
 
     iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.review_summaries
     []
@@ -126,7 +126,12 @@ defmodule Reporter.AppStore do
       title = review["title"]["label"]
       body = review["content"]["label"]
 
-      result = [author: author, rating: rating, title: title, body: body]
+
+      result = Dict.put(%{}, "author", author)
+               |> Dict.put("rating", rating)
+               |> Dict.put("title", title)
+               |> Dict.put("body", body)
+
       List.insert_at(list, 0, result)
     end)
   end
