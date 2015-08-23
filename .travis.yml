@@ -6,7 +6,7 @@ elixir:
 sudo: false
 before_script:
   - mix local.hex --force
-  - mix deps.get -- only test
+  - mix do deps.get -- only test
 script:
   - mix test
 notifications:

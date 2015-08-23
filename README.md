@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/KazuCocoa/simple_app_reporter_ex.svg?branch=master)](https://travis-ci.org/KazuCocoa/simple_app_reporter_ex)
+
 # About
 
 `Reporter` is simple reporting App reviews library.
