@@ -17,8 +17,8 @@ defmodule Reporter do
   "404"
 
   """
-  @spec app_store_rss_json(String.t, String.t) :: JSON
-  def app_store_rss_json(app_id, locale \\ "en") do
+  @spec app_store_rss_json!(String.t, String.t) :: JSON
+  def app_store_rss_json!(app_id, locale \\ "en") do
     headers = [{"Accept", "application/json; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_json(app_id, locale), headers)
     |> get_body_json
@@ -34,8 +34,8 @@ defmodule Reporter do
   @doc """
   Get XML formatted response from Apple Server.
   """
-  @spec app_store_rss_xml(String.t, String.t) :: XML
-  def app_store_rss_xml(app_id, locale \\ "en") do
+  @spec app_store_rss_xml!(String.t, String.t) :: XML
+  def app_store_rss_xml!(app_id, locale \\ "en") do
     headers = [{"Accept", "application/xml; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_xml(app_id, locale), headers)
     |> get_body
@@ -59,8 +59,8 @@ defmodule Reporter do
   "404"
 
   """
-  @spec google_play(String.t, String.t) :: list
-  def google_play(package, locale \\ "en") do
+  @spec google_play!(String.t, String.t) :: list
+  def google_play!(package, locale \\ "en") do
     headers = [{"Accept", "text/html; charset=UTF-8"}]
     HTTPoison.post(GooglePlay.review_url(package, locale), "", headers)
     |> get_body

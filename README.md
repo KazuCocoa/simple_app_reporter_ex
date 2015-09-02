@@ -14,7 +14,7 @@ First, add Reporter to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:reporter, "~> 0.1.3"}]
+  [{:reporter, "~> 0.2.2"}]
 end
 ```
 
@@ -27,16 +27,16 @@ and run `$ mix deps.get`.
 ```elixir
 # The following method provide us very useful summary.
 # You can get reviewed date, author, rating, title and body as Dict.
-iex> Reporter.app_store_rss_json("375380948", "jp") |> Reporter.AppStore.review_summaries |> Enum.at(0)
+iex> Reporter.app_store_rss_json!("375380948", "jp") |> Reporter.AppStore.review_summaries |> Enum.at(0)
 %{"author" => "m.aaa...", "rating" => "4", "title" => "あまり", "body" => "利便性がわかりずらい"}
 
 
-iex> Reporter.app_store_rss_json("375380948", "jp")
+iex> Reporter.app_store_rss_json!("375380948", "jp")
      |> Reporter.AppStore.author
 %{"name" => %{"label" => "iTunes Store"},
   "uri" => %{"label" => "http://www.apple.com/jp/itunes/"}}
 
-iex> Reporter.app_store_rss_json("375380948", "jp") |> Reporter.AppStore.reviews |> Enum.at(0)
+iex> Reporter.app_store_rss_json!("375380948", "jp") |> Reporter.AppStore.reviews |> Enum.at(0)
 %{"author" => %{"label" => "", "name" => %{"label" => "m.aaa..."},
   "uri" => %{"label" => "https://itunes.apple.com/jp/reviews/id451145371"}},
   "content" => %{"attributes" => %{"type" => "text"},
@@ -51,7 +51,7 @@ iex> Reporter.app_store_rss_json("375380948", "jp") |> Reporter.AppStore.reviews
 ```
 
 ```elixir
-iex> Reporter.app_store_rss_json("375380948", "jp")
+iex> Reporter.app_store_rss_json!("375380948", "jp")
      |> Reporter.AppStore.all_json
 
 # Return full JSON.
@@ -62,7 +62,7 @@ iex> Reporter.app_store_rss_json("375380948", "jp")
 Only implemented getting parsed XML.
 
 ```elixir
-iex> Reporter.app_store_rss_xml("375380948", "jp")
+iex> Reporter.app_store_rss_xml!("375380948", "jp")
      |> Reporter.AppStore.all_xml
 
 # Return HTTP body.
@@ -73,14 +73,14 @@ iex> Reporter.app_store_rss_xml("375380948", "jp")
 ```elixir
 # The following method provide us very useful summary.
 # You can get reviewed date, author, rating, title and body as Dict.
-iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
 %{"date" => "July 24, 2015", "author" => "Bobbins Francis", "rating" => 2.0, "title" => nil,
  "body" => " Crashing a lot lot lot😡😣 "}
 
-iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
+iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
 " Crashing a lot lot lot😡😣 "
 
-iex> Reporter.google_play("com.android.chrome", "en") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
+iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
 {"div", [{"class", "review-body"}],
  [{"span", [{"class", "review-title"}], ["Not bad"]},
   " Unable to download from chrome. ",
