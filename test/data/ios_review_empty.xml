@@ -1,22 +1,3268 @@
-[%{attr: ["xmlns:im": "http://itunes.apple.com/rss",
-    xmlns: "http://www.w3.org/2005/Atom", "xml:lang": "ja"], name: :feed,
-   value: [%{attr: [], name: :id,
-      value: ["https://itunes.apple.com/jp/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/xml"]},
-    %{attr: [], name: :title,
-      value: ["iTunes Store: カスタマーレビュー"]},
-    %{attr: [], name: :updated, value: ["2015-06-21T06:52:04-07:00"]},
-    %{attr: [rel: "alternate", type: "text/html",
-       href: "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=jp&id=26105"],
-      name: :link, value: []},
-    %{attr: [rel: "self",
-       href: "https://itunes.apple.com/jp/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/xml"],
-      name: :link, value: []},
-    %{attr: [rel: "first", href: ""], name: :link, value: []},
-    %{attr: [rel: "last", href: ""], name: :link, value: []},
-    %{attr: [rel: "previous", href: ""], name: :link, value: []},
-    %{attr: [rel: "next", href: ""], name: :link, value: []},
-    %{attr: [], name: :icon, value: ["http://itunes.apple.com/favicon.ico"]},
-    %{attr: [], name: :author,
-      value: [%{attr: [], name: :name, value: ["iTunes Store"]},
-       %{attr: [], name: :uri, value: ["http://www.apple.com/jp/itunes/"]}]},
-    %{attr: [], name: :rights, value: ["Copyright 2008 Apple Inc."]}]}]
+<?xml version="1.0" encoding="utf-8"?>
+
+	<feed xmlns:im="http://itunes.apple.com/rss" xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+		<id>https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/xml</id><title>iTunes Store: カスタマーレビュー</title><updated>2015-09-02T09:21:13-07:00</updated><link rel="alternate" type="text/html" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=jp&amp;id=26105"/><link rel="self" href="https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/xml"/><link rel="first" href="https://itunes.apple.com/jp/rss/customerreviews/page=1/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/xml"/><link rel="last" href="https://itunes.apple.com/jp/rss/customerreviews/page=8/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/xml"/><link rel="previous" href="https://itunes.apple.com/jp/rss/customerreviews/page=1/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/xml"/><link rel="next" href="https://itunes.apple.com/jp/rss/customerreviews/page=2/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/xml"/><icon>http://itunes.apple.com/favicon.ico</icon><author><name>iTunes Store</name><uri>http://www.apple.com/jp/itunes/</uri></author><rights>Copyright 2008 Apple Inc.</rights>
+
+			<entry>
+				<updated>2015-09-02T09:21:13-07:00</updated>
+
+					<id im:id="375380948" im:bundleId="com.apple.store.Jolly">https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2</id>
+
+					<title>Apple Store - Apple</title>
+
+
+
+					<im:name>Apple Store</im:name>
+
+					<link rel="alternate" type="text/html" href="https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2"/>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<category im:id="6012" term="Lifestyle" scheme="https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&amp;uo=2" label="ライフスタイル"/>
+
+					<im:artist href="https://itunes.apple.com/jp/developer/apple/id284417353?mt=8&amp;uo=2">Apple</im:artist>
+
+					<im:price amount="0.00000" currency="JPY">入手</im:price>
+
+					<im:image height="53">http://is5.mzstatic.com/image/thumb/Purple7/v4/83/61/4b/83614bab-eb8e-ca8d-56ce-2aac8b851f96/mzl.dxjkvxkq.png/53x53bb-85.png</im:image>
+
+					<im:image height="75">http://is4.mzstatic.com/image/thumb/Purple7/v4/83/61/4b/83614bab-eb8e-ca8d-56ce-2aac8b851f96/mzl.dxjkvxkq.png/75x75bb-85.png</im:image>
+
+					<im:image height="100">http://is3.mzstatic.com/image/thumb/Purple7/v4/83/61/4b/83614bab-eb8e-ca8d-56ce-2aac8b851f96/mzl.dxjkvxkq.png/100x100bb-85.png</im:image>
+
+					<rights>&#169; 2015 Apple Inc.</rights>
+
+					<im:releaseDate label="2011年9月21日 ">2011-09-21T10:10:33-07:00</im:releaseDate>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+                        &lt;td align=&quot;center&quot; width=&quot;166&quot; valign=&quot;top&quot;&gt;
+                            &lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;Apple - Apple Store アートワーク&quot; src=&quot;http://is3.mzstatic.com/image/thumb/Purple7/v4/83/61/4b/83614bab-eb8e-ca8d-56ce-2aac8b851f96/mzl.dxjkvxkq.png/100x100bb-85.png&quot; /&gt;&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td width=&quot;10&quot;&gt;&lt;img alt=&quot;&quot; width=&quot;10&quot; height=&quot;1&quot; src=&quot;https://s.mzstatic.com/images/spacer.gif&quot; /&gt;&lt;/td&gt;
+                    	&lt;td width=&quot;95%&quot;&gt;
+
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;Apple Store&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+                        &lt;a href=&quot;https://itunes.apple.com/jp/developer/apple/id284417353?mt=8&amp;amp;uo=2&quot;&gt;Apple&lt;/a&gt;
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+						 	&lt;br/&gt;
+                            &lt;b&gt;ジャンル:&lt;/b&gt; &lt;a href=&quot;https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&amp;uo=2&quot;&gt;ライフスタイル&lt;/a&gt;
+
+						 	&lt;br/&gt;
+                            &lt;b&gt;リリース日:&lt;/b&gt; 2011年9月21日
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt; &amp;#169; © 2015 Apple Inc.&lt;/font&gt;
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-08-25T01:45:00-07:00</updated>
+
+					<id>1248275433</id>
+
+					<title>お気に入り登録</title>
+
+					<content type="text">お気に入り登録できないじゃん。ハートのアイコンどこにあるん。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.4</im:version>
+
+					<author><name>佑介⭐️</name><uri>https://itunes.apple.com/jp/reviews/id360563540</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;お気に入り登録&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;お気に入り登録できないじゃん。ハートのアイコンどこにあるん。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-08-19T05:26:00-07:00</updated>
+
+					<id>1245414519</id>
+
+					<title>何故</title>
+
+					<content type="text">Wi-Fi使ってないとアプリが開けないとか</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.4</im:version>
+
+					<author><name>akn0225</name><uri>https://itunes.apple.com/jp/reviews/id448841495</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;何故&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Wi-Fi使ってないとアプリが開けないとか&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-08-10T18:30:00-07:00</updated>
+
+					<id>1241165686</id>
+
+					<title>icloud watch</title>
+
+					<content type="text">great!</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>R@ine</name><uri>https://itunes.apple.com/jp/reviews/id255054995</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;icloud watch&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;great!&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-07-22T00:30:00-07:00</updated>
+
+					<id>1231201286</id>
+
+					<title>買えない</title>
+
+					<content type="text">お支払い情報から先に進めません。
+保存を押しても買えず、何度やり直しても買えず。使い物にならない。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>みきぴんく</name><uri>https://itunes.apple.com/jp/reviews/id176113111</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;買えない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;お支払い情報から先に進めません。&lt;br/&gt;保存を押しても買えず、何度やり直しても買えず。使い物にならない。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-07-18T12:51:00-07:00</updated>
+
+					<id>1229378905</id>
+
+					<title>買えない</title>
+
+					<content type="text">カートに商品を入れたが、注文確定ボタンを押すと、カード情報確認画面から先に進めない。
+カートを空にして何度かやってみたが症状変わらず。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>shimom</name><uri>https://itunes.apple.com/jp/reviews/id101991385</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;買えない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;カートに商品を入れたが、注文確定ボタンを押すと、カード情報確認画面から先に進めない。&lt;br/&gt;カートを空にして何度かやってみたが症状変わらず。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-07-16T02:16:00-07:00</updated>
+
+					<id>1228064729</id>
+
+					<title>Still a Beta, Apple should be embarrassed.</title>
+
+					<content type="text">Format not optimized to iPad aside, when payment confirmation window just keeps reopening every time I confirm, the frustration was enough to send me here and make a review.</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>BBQ...</name><uri>https://itunes.apple.com/jp/reviews/id15373223</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;Still a Beta, Apple should be embarrassed.&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Format not optimized to iPad aside, when payment confirmation window just keeps reopening every time I confirm, the frustration was enough to send me here and make a review.&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-07-11T18:26:00-07:00</updated>
+
+					<id>1225838092</id>
+
+					<title>神ストア</title>
+
+					<content type="text">Yahooとかアマゾンよりも安いし
+apple純正のアプリだから
+安心感もあるし、最高！！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>minecraftpe勢</name><uri>https://itunes.apple.com/jp/reviews/id418335058</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;神ストア&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Yahooとかアマゾンよりも安いし&lt;br/&gt;apple純正のアプリだから&lt;br/&gt;安心感もあるし、最高！！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-07-02T07:32:00-07:00</updated>
+
+					<id>1221110604</id>
+
+					<title>最高</title>
+
+					<content type="text">あなたは、大勢の人々を幸せにしてきたのか？ 僕は、してきたよ(^_^) あなたの心は、腐ってる。僕が良いこうだっと思った事をじゃましてきたね こうだと言う事を邪魔するのなら始まらない あなたの心は、腐っては、いない そこまでか！ ありがとう 愛していたんだよ💖✌️</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>石田法男</name><uri>https://itunes.apple.com/jp/reviews/id233160598</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;最高&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;あなたは、大勢の人々を幸せにしてきたのか？ 僕は、してきたよ(^_^) あなたの心は、腐ってる。僕が良いこうだっと思った事をじゃましてきたね こうだと言う事を邪魔するのなら始まらない あなたの心は、腐っては、いない そこまでか！ ありがとう 愛していたんだよ💖✌️&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-06-27T23:22:00-07:00</updated>
+
+					<id>1218961346</id>
+
+					<title>サイコー</title>
+
+					<content type="text">品物揃えサイコーだね
+でも高い</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>毛細血管いっぱい詰まってるとこ脇</name><uri>https://itunes.apple.com/jp/reviews/id450603996</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;サイコー&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;品物揃えサイコーだね&lt;br/&gt;でも高い&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-06-26T19:30:00-07:00</updated>
+
+					<id>1218384847</id>
+
+					<title>最高</title>
+
+					<content type="text">いいね</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>のねほやねりや</name><uri>https://itunes.apple.com/jp/reviews/id451107565</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;最高&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;いいね&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-06-26T18:15:00-07:00</updated>
+
+					<id>1218354986</id>
+
+					<title>商品</title>
+
+					<content type="text">良いものです。高いので買えません。
+余裕が出来たら欲しいです。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3.1</im:version>
+
+					<author><name>北斗の人</name><uri>https://itunes.apple.com/jp/reviews/id280980143</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;商品&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;良いものです。高いので買えません。&lt;br/&gt;余裕が出来たら欲しいです。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-06-18T09:12:00-07:00</updated>
+
+					<id>1214217087</id>
+
+					<title>ウイルス</title>
+
+					<content type="text">ANDRIDOS_Code4HK.A or ?
+iOS_XAGENT.A or ?
+iOS_XAGENT.B ?</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.3</im:version>
+
+					<author><name>room1225</name><uri>https://itunes.apple.com/jp/reviews/id453851514</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;ウイルス&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;ANDRIDOS_Code4HK.A or ?&lt;br/&gt;iOS_XAGENT.A or ?&lt;br/&gt;iOS_XAGENT.B ?&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-09T08:06:00-07:00</updated>
+
+					<id>1194744321</id>
+
+					<title>まあまあ</title>
+
+					<content type="text">アンドロイドのうんこ商品見てるよりましです。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>4</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>Abcあbc</name><uri>https://itunes.apple.com/jp/reviews/id430619178</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;まあまあ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;アンドロイドのうんこ商品見てるよりましです。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-08T18:53:00-07:00</updated>
+
+					<id>1194424298</id>
+
+					<title>わからん</title>
+
+					<content type="text">この、アプリを、ひらいたら、わけわからなかった</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>なた」アフマは</name><uri>https://itunes.apple.com/jp/reviews/id411020824</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;わからん&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;この、アプリを、ひらいたら、わけわからなかった&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-08T18:05:00-07:00</updated>
+
+					<id>1194405493</id>
+
+					<title>touch ID不可</title>
+
+					<content type="text">apple製のアプリなのにtouch IDに対応しておらず不便です。
+注文した商品の状況確認に毎回パスワード入力は必要でしょうか？
+同じ端末からのアクセスであれば購入、キャンセルなどの時のみパスワード入力すれば十分だと思います。
+せめてtouch IDでの入力にしてくれればまだ楽なのですが。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>ムナリ</name><uri>https://itunes.apple.com/jp/reviews/id16514024</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;touch ID不可&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;apple製のアプリなのにtouch IDに対応しておらず不便です。&lt;br/&gt;注文した商品の状況確認に毎回パスワード入力は必要でしょうか？&lt;br/&gt;同じ端末からのアクセスであれば購入、キャンセルなどの時のみパスワード入力すれば十分だと思います。&lt;br/&gt;せめてtouch IDでの入力にしてくれればまだ楽なのですが。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-04T18:11:00-07:00</updated>
+
+					<id>1192534104</id>
+
+					<title>ヒカキン</title>
+
+					<content type="text">今でもてるんだよ</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>わやちすーけく</name><uri>https://itunes.apple.com/jp/reviews/id380914220</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;ヒカキン&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;今でもてるんだよ&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-04T09:10:00-07:00</updated>
+
+					<id>1192366591</id>
+
+					<title>Safariからの強制起動は勘弁してほしい</title>
+
+					<content type="text">先日、Macを購入するときにSafariの方で見ていたのですがカスタマイズの画面に行くとアプリ版が勝手に起動してしまうので削除しました。カスタマイズ画面に関してはサイトの方が見やすいので余計なことはしないで欲しいものです。
+それとアプリの方とは関係ないですがよく「クレジットカードは使いたくないからiTunesカードで買い物できたらいい」というのを見ますが、少し面倒かもしれませんが直接Apple Storeに行ってAppleギフトカードを購入してはいかかでしょうか？
+AppleギフトカードはiTunesカードと違いApple製品しか購入できませんがクレジットカードに近い使い方できますのでオススメです。私の場合はクレジットカードの限度額が購入価格を下回っていて足らず分をAppleギフトカードで補いました。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>Ryizxhgd</name><uri>https://itunes.apple.com/jp/reviews/id330616010</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;Safariからの強制起動は勘弁してほしい&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;先日、Macを購入するときにSafariの方で見ていたのですがカスタマイズの画面に行くとアプリ版が勝手に起動してしまうので削除しました。カスタマイズ画面に関してはサイトの方が見やすいので余計なことはしないで欲しいものです。&lt;br/&gt;それとアプリの方とは関係ないですがよく「クレジットカードは使いたくないからiTunesカードで買い物できたらいい」というのを見ますが、少し面倒かもしれませんが直接Apple Storeに行ってAppleギフトカードを購入してはいかかでしょうか？&lt;br/&gt;AppleギフトカードはiTunesカードと違いApple製品しか購入できませんがクレジットカードに近い使い方できますのでオススメです。私の場合はクレジットカードの限度額が購入価格を下回っていて足らず分をAppleギフトカードで補いました。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-05-01T18:39:00-07:00</updated>
+
+					<id>1190959974</id>
+
+					<title>Touch ID対応して！</title>
+
+					<content type="text">いろいろな操作で何度もApple IDのパスワード入力を求められます。Touch ID対応して！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.2.1</im:version>
+
+					<author><name>naomi.n</name><uri>https://itunes.apple.com/jp/reviews/id35983086</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;Touch ID対応して！&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;いろいろな操作で何度もApple IDのパスワード入力を求められます。Touch ID対応して！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-04-26T04:49:00-07:00</updated>
+
+					<id>1188311723</id>
+
+					<title>読み込みが終わらない</title>
+
+					<content type="text">カートをタップすると延々と読み込みしていますが何も表示されない。
+アカウント設定も同様。
+
+何も買えません。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>コーヒー飲み過ぎ</name><uri>https://itunes.apple.com/jp/reviews/id219357689</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;読み込みが終わらない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;カートをタップすると延々と読み込みしていますが何も表示されない。&lt;br/&gt;アカウント設定も同様。&lt;br/&gt;&lt;br/&gt;何も買えません。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-04-19T19:00:00-07:00</updated>
+
+					<id>1185367919</id>
+
+					<title>使いづらい</title>
+
+					<content type="text">ネームの刻印も表示されなくなったし、購入手続きが表示がないし、サポート連絡先もなんも表示されない。大変おかしい</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>宍道湖シジミ</name><uri>https://itunes.apple.com/jp/reviews/id186213713</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;使いづらい&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;ネームの刻印も表示されなくなったし、購入手続きが表示がないし、サポート連絡先もなんも表示されない。大変おかしい&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-04-12T06:34:00-07:00</updated>
+
+					<id>1181741939</id>
+
+					<title>今のところ、問題無い</title>
+
+					<content type="text">WATCH 予約には、1分で完了できたので、よかった。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>4</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>あやつき</name><uri>https://itunes.apple.com/jp/reviews/id32205714</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;今のところ、問題無い&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;WATCH 予約には、1分で完了できたので、よかった。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-04-11T19:00:00-07:00</updated>
+
+					<id>1181489893</id>
+
+					<title>素晴らしい</title>
+
+					<content type="text">インターネットのホームページよりも、明らかに見やすく、使いやすいです。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>Reiki.S</name><uri>https://itunes.apple.com/jp/reviews/id355536147</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;素晴らしい&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;インターネットのホームページよりも、明らかに見やすく、使いやすいです。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-03-18T08:14:00-07:00</updated>
+
+					<id>1169815228</id>
+
+					<title>刻印の編集が反映されません</title>
+
+					<content type="text">刻印を入れてiPadを贈ろうと思いましたが、一度入力したものを変更しても結果に反映されません。
+カートを見ると前のメッセージのまま…
+
+一度製品をカートから出し同じものを購入しても、今度は最初から違う(前の)メッセージが入力されています。
+これなんとかならないでしょうか？</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>贈り物には使えない</name><uri>https://itunes.apple.com/jp/reviews/id442975741</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;刻印の編集が反映されません&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;刻印を入れてiPadを贈ろうと思いましたが、一度入力したものを変更しても結果に反映されません。&lt;br/&gt;カートを見ると前のメッセージのまま…&lt;br/&gt;&lt;br/&gt;一度製品をカートから出し同じものを購入しても、今度は最初から違う(前の)メッセージが入力されています。&lt;br/&gt;これなんとかならないでしょうか？&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-03-16T22:52:00-07:00</updated>
+
+					<id>1169183167</id>
+
+					<title>流石、Apple。</title>
+
+					<content type="text">Apple Storeに前まで置いてあったのになくなっちゃった商品があったんですけど、Apple Store Appには、あったので無事に買えました！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.2</im:version>
+
+					<author><name>『サッサー』</name><uri>https://itunes.apple.com/jp/reviews/id320225103</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;流石、Apple。&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Apple Storeに前まで置いてあったのになくなっちゃった商品があったんですけど、Apple Store Appには、あったので無事に買えました！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-03-02T15:29:00-07:00</updated>
+
+					<id>1162106994</id>
+
+					<title>横着</title>
+
+					<content type="text">さまざまな、とかの説明では、アップデートしない。
+不具合リスク考えると、使用を止めるべき</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>なほとか</name><uri>https://itunes.apple.com/jp/reviews/id202719429</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;横着&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;さまざまな、とかの説明では、アップデートしない。&lt;br/&gt;不具合リスク考えると、使用を止めるべき&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-02-26T02:11:00-07:00</updated>
+
+					<id>1158835731</id>
+
+					<title>りんご！</title>
+
+					<content type="text">りんご！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>つのくそいこひ</name><uri>https://itunes.apple.com/jp/reviews/id359336412</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;りんご！&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;りんご！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-30T11:27:00-07:00</updated>
+
+					<id>1138822924</id>
+
+					<title>微妙</title>
+
+					<content type="text">製品を見るには十分だけど、支払い方法がカードのみなのを改善してもらえれば最高です♪</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>Arisu02</name><uri>https://itunes.apple.com/jp/reviews/id24299189</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;微妙&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;製品を見るには十分だけど、支払い方法がカードのみなのを改善してもらえれば最高です♪&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-29T22:48:00-07:00</updated>
+
+					<id>1138454700</id>
+
+					<title>おすすめタブ</title>
+
+					<content type="text">他の方も書かれていますがiPadでもおすすめタブを表示してください。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>あぃりす</name><uri>https://itunes.apple.com/jp/reviews/id122898521</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;おすすめタブ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;他の方も書かれていますがiPadでもおすすめタブを表示してください。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-28T20:16:00-07:00</updated>
+
+					<id>1137850525</id>
+
+					<title>最高のアプリ</title>
+
+					<content type="text">とても使いやすくてよかった👍</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>国澤爽馬</name><uri>https://itunes.apple.com/jp/reviews/id429066132</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;最高のアプリ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;とても使いやすくてよかった👍&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-23T20:39:00-07:00</updated>
+
+					<id>1135080462</id>
+
+					<title>Appleストアギフトカード</title>
+
+					<content type="text">支払い方法にAppleストアギフトカードが使えません。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>ｉ－Ｄ</name><uri>https://itunes.apple.com/jp/reviews/id407986250</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;Appleストアギフトカード&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;支払い方法にAppleストアギフトカードが使えません。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-21T15:03:00-07:00</updated>
+
+					<id>1133884627</id>
+
+					<title>販売していないんなら</title>
+
+					<content type="text">iPhone6売る気ないんなら表示させないでほしい！！！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>まっつんくん</name><uri>https://itunes.apple.com/jp/reviews/id175460237</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;販売していないんなら&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;iPhone6売る気ないんなら表示させないでほしい！！！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-18T12:11:00-07:00</updated>
+
+					<id>1132209234</id>
+
+					<title>良いです</title>
+
+					<content type="text">普通に使えます。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>toshz</name><uri>https://itunes.apple.com/jp/reviews/id140659369</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;良いです&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;普通に使えます。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2015-01-12T17:13:00-07:00</updated>
+
+					<id>1128947067</id>
+
+					<title>代引き未対応</title>
+
+					<content type="text">クレジットカードしか支払いできないので、製品を見る程度しか使えないです。
+代引き対応お願いします。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>Taka3590</name><uri>https://itunes.apple.com/jp/reviews/id220184001</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;代引き未対応&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;クレジットカードしか支払いできないので、製品を見る程度しか使えないです。&lt;br/&gt;代引き対応お願いします。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-31T16:41:00-07:00</updated>
+
+					<id>1122488930</id>
+
+					<title>無料DLができない。</title>
+
+					<content type="text">ストア内のおすすめタブがそのものが存在しないので期間限定無料アプリがDLできない。
+iPadでは提供していないそうですがそれならユニバーサルとは言わないのでは？</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>alyoshaknownasariyosiya</name><uri>https://itunes.apple.com/jp/reviews/id14850809</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;無料DLができない。&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;ストア内のおすすめタブがそのものが存在しないので期間限定無料アプリがDLできない。&lt;br/&gt;iPadでは提供していないそうですがそれならユニバーサルとは言わないのでは？&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-27T10:39:00-07:00</updated>
+
+					<id>1120173238</id>
+
+					<title>ゴミ</title>
+
+					<content type="text">無料コードのために入れたが、何度試してもコードが使えなかった</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>ナサニエル７３</name><uri>https://itunes.apple.com/jp/reviews/id282259218</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;ゴミ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;無料コードのために入れたが、何度試してもコードが使えなかった&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-27T03:17:00-07:00</updated>
+
+					<id>1119978313</id>
+
+					<title>You only need this when you buy a lot from apple store.</title>
+
+					<content type="text">I prefer to buy my Apple devices at shop or via their apple store web site. I buy accessories from 3rd parties for better prices. This app is useless to me most of the time and takes my precious storage as I am only 16GB capacity.</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>Chiba Jyun</name><uri>https://itunes.apple.com/jp/reviews/id364239791</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;You only need this when you buy a lot from apple store.&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;I prefer to buy my Apple devices at shop or via their apple store web site. I buy accessories from 3rd parties for better prices. This app is useless to me most of the time and takes my precious storage as I am only 16GB capacity.&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-21T05:07:00-07:00</updated>
+
+					<id>1116888912</id>
+
+					<title>凄くいい！！！</title>
+
+					<content type="text">今まで、Safariから見ていたので、これを使ってから、凄く楽に見られるようになりました！製品の紹介もしっかりしているので大変素晴らしいと思います！是非、暇つぶしにもなるのでダウンロードしてみてください！</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>音楽好きなAplle 信者</name><uri>https://itunes.apple.com/jp/reviews/id415281644</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;凄くいい！！！&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;今まで、Safariから見ていたので、これを使ってから、凄く楽に見られるようになりました！製品の紹介もしっかりしているので大変素晴らしいと思います！是非、暇つぶしにもなるのでダウンロードしてみてください！&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-19T02:48:00-07:00</updated>
+
+					<id>1115722879</id>
+
+					<title>代引きも、、、</title>
+
+					<content type="text">代引きの選択肢もつけて欲しい。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>3</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>くまの手</name><uri>https://itunes.apple.com/jp/reviews/id281213175</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;代引きも、、、&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;代引きの選択肢もつけて欲しい。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-07T03:14:00-07:00</updated>
+
+					<id>1109296158</id>
+
+					<title>まじクソ</title>
+
+					<content type="text">まじこのアプリいらねーよクソアプリだ</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>ゲームいい</name><uri>https://itunes.apple.com/jp/reviews/id390843356</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;まじクソ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;まじこのアプリいらねーよクソアプリだ&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-05T23:48:00-07:00</updated>
+
+					<id>1108641131</id>
+
+					<title>繋がらない</title>
+
+					<content type="text">AppleStoreに接続できませんとなる
+Wi-Fiでも繋がらない</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>Ａー１</name><uri>https://itunes.apple.com/jp/reviews/id257471041</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;繋がらない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;AppleStoreに接続できませんとなる&lt;br/&gt;Wi-Fiでも繋がらない&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-12-02T13:15:00-07:00</updated>
+
+					<id>1106965671</id>
+
+					<title>インストールすらできない</title>
+
+					<content type="text">このアプリを起動するとアップデート強要されるがiOS7が必須だとなる。
+私のiPodはiOS6からアップデート出来ないのに</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>S．Ｋ</name><uri>https://itunes.apple.com/jp/reviews/id330441569</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;インストールすらできない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;このアプリを起動するとアップデート強要されるがiOS7が必須だとなる。&lt;br/&gt;私のiPodはiOS6からアップデート出来ないのに&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-24T01:07:00-07:00</updated>
+
+					<id>1102250417</id>
+
+					<title>何の役にもたたないアプリ</title>
+
+					<content type="text">おちる！おちる！Storeの検索も最悪。
+カッコはいいが実用的ではない。、さすが、Appleだと感心する。Apple製品そのものだ。欠点だらけ。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>makabe.M</name><uri>https://itunes.apple.com/jp/reviews/id105329745</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;何の役にもたたないアプリ&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;おちる！おちる！Storeの検索も最悪。&lt;br/&gt;カッコはいいが実用的ではない。、さすが、Appleだと感心する。Apple製品そのものだ。欠点だらけ。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-21T21:37:00-07:00</updated>
+
+					<id>1100921355</id>
+
+					<title>AppleStore</title>
+
+					<content type="text">Appleの製品、オプション品等、簡単に探せるし気軽に購入出来るので便利に使わせて頂いています。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>5</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>MA54KI</name><uri>https://itunes.apple.com/jp/reviews/id385194079</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;AppleStore&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Appleの製品、オプション品等、簡単に探せるし気軽に購入出来るので便利に使わせて頂いています。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-20T04:09:00-07:00</updated>
+
+					<id>1099989420</id>
+
+					<title>全く表示されない</title>
+
+					<content type="text">起動しても何も表示されません</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>魚化</name><uri>https://itunes.apple.com/jp/reviews/id296475588</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;全く表示されない&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;起動しても何も表示されません&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-20T02:38:00-07:00</updated>
+
+					<id>1099955922</id>
+
+					<title>使ってミラー</title>
+
+					<content type="text">Goodですね</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>4</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>にゃお、。</name><uri>https://itunes.apple.com/jp/reviews/id422622663</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;使ってミラー&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;Goodですね&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-16T06:53:00-07:00</updated>
+
+					<id>1098035890</id>
+
+					<title>残念です…。</title>
+
+					<content type="text">camera+が11/16までダウンドーロできるということでしたが、まだ11/16の今日の時点で、すでに専用ページがなくなってしまっていました(&gt;_&lt;)他の方のレビューを読ませて頂くと、もっと前からなくなってしまっていたのでしょうか…。
+折角期間内にアプリをとったのに残念です（ ;  ; ）
+対処して頂けると嬉しいですm(_ _)m</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>2</im:voteSum>
+
+					<im:voteCount>2</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>♡ayayan♡</name><uri>https://itunes.apple.com/jp/reviews/id351658362</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;残念です…。&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;camera+が11/16までダウンドーロできるということでしたが、まだ11/16の今日の時点で、すでに専用ページがなくなってしまっていました(&amp;gt;_&amp;lt;)他の方のレビューを読ませて頂くと、もっと前からなくなってしまっていたのでしょうか…。&lt;br/&gt;折角期間内にアプリをとったのに残念です（ ;  ; ）&lt;br/&gt;対処して頂けると嬉しいですm(_ _)m&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-05T07:18:00-07:00</updated>
+
+					<id>1092067385</id>
+
+					<title>ダメです</title>
+
+					<content type="text">camera＋の無料ダウンロードができると聞いていたにもかかわらず、表示すらされないのですが。あらゆる案内見てもここまでのことはなさそうなので、私だけですか？期間限定なのでなんとかしてください、早急に。いますぐ。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>3</im:voteSum>
+
+					<im:voteCount>3</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>温泉アフロ</name><uri>https://itunes.apple.com/jp/reviews/id362292475</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;ダメです&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;camera＋の無料ダウンロードができると聞いていたにもかかわらず、表示すらされないのですが。あらゆる案内見てもここまでのことはなさそうなので、私だけですか？期間限定なのでなんとかしてください、早急に。いますぐ。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-11-01T17:22:00-07:00</updated>
+
+					<id>1090116462</id>
+
+					<title>iPhone6のiOS8.2バージョンアップ後に受信がわるい。</title>
+
+					<content type="text">iOS8.2にアップ後、ネット通信の受信が時々出来なくなる。ひどい時は2日に1回ある。
+本体をOＦＦにして、再度ONして毎回使用しています。早く対策を願う。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>0</im:voteSum>
+
+					<im:voteCount>0</im:voteCount>
+
+					<im:rating>2</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>さそりみずがめ</name><uri>https://itunes.apple.com/jp/reviews/id323510836</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;iPhone6のiOS8.2バージョンアップ後に受信がわるい。&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;iOS8.2にアップ後、ネット通信の受信が時々出来なくなる。ひどい時は2日に1回ある。&lt;br/&gt;本体をOＦＦにして、再度ONして毎回使用しています。早く対策を願う。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-10-31T06:31:00-07:00</updated>
+
+					<id>1089222811</id>
+
+					<title>頻繁にフリーズする</title>
+
+					<content type="text">頻繁にフリーズします。
+また、日によってフリーズするページが異なります。サーバとの通信に問題がありそうです。
+フリーズ頻発するようになったのは、アイウォッチ発表後のアップルサイト更新後でしたね…</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>1</im:voteSum>
+
+					<im:voteCount>1</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>でんがく</name><uri>https://itunes.apple.com/jp/reviews/id135146997</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;頻繁にフリーズする&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;頻繁にフリーズします。&lt;br/&gt;また、日によってフリーズするページが異なります。サーバとの通信に問題がありそうです。&lt;br/&gt;フリーズ頻発するようになったのは、アイウォッチ発表後のアップルサイト更新後でしたね…&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+			<entry>
+				<updated>2014-10-30T17:24:00-07:00</updated>
+
+					<id>1088919577</id>
+
+					<title>意味ない。</title>
+
+					<content type="text">6plusのUIに対応してない！すぐに改善して。</content>
+
+					<im:contentType term="Application" label="アプリケーション"/>
+
+					<im:voteSum>2</im:voteSum>
+
+					<im:voteCount>2</im:voteCount>
+
+					<im:rating>1</im:rating>
+
+					<im:version>3.1</im:version>
+
+					<author><name>グリグリグリ</name><uri>https://itunes.apple.com/jp/reviews/id143175226</uri></author>
+
+					<link rel="related" href="https://itunes.apple.com/jp/review?id=375380948&amp;type=Purple%20Software"/>
+
+
+					<content type="html">&lt;table border=&quot;0&quot; width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;table border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                &lt;tr valign=&quot;top&quot; align=&quot;left&quot;&gt;
+
+
+                    	&lt;td width=&quot;100%&quot;&gt;
+
+                        &lt;b&gt;&lt;a href=&quot;https://itunes.apple.com/jp/app/apple-store/id375380948?mt=8&amp;uo=2&quot;&gt;意味ない。&lt;/a&gt;&lt;/b&gt;&lt;br/&gt;
+
+
+
+
+
+
+
+                       &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;
+
+                        &lt;/font&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+
+                &lt;font size=&quot;2&quot; face=&quot;Helvetica,Arial,Geneva,Swiss,SunSans-Regular&quot;&gt;&lt;br/&gt;6plusのUIに対応してない！すぐに改善して。&lt;/font&gt;&lt;br/&gt;
+
+
+
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			</entry>
+
+	</feed>

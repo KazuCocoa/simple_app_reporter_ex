@@ -281,4 +281,6 @@ defmodule Reporter.AppStore do
       ]
     ) |> URI.encode
   end
+
+  # Reporter.AppStore.all_xml(File.read!("test/data/ios_review_empty.xml"))
 end
