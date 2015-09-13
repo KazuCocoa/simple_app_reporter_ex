@@ -2,15 +2,18 @@ defmodule Reporter.AppStore do
   alias Reporter.AppStore
 
   defstruct host: Application.get_env(:reporter, :app_host)
+  @type t :: %AppStore{host: String.t}
 
   @doc """
   Return full JSON map.
   """
+  @spec all_json(String.t) :: String.t
   def all_json(json), do: json
 
   @doc """
   Return full XML via Quinn.parse(xml).
   """
+  @spec all_xml(String.t) :: String.t
   def all_xml(xml), do: Quinn.parse(xml)
 
   @doc ~S"""
@@ -28,6 +31,7 @@ defmodule Reporter.AppStore do
 
 
   """
+  @spec author(String.t) :: String.t
   def author(json), do: json["feed"]["author"]
 
   @doc ~S"""
@@ -67,6 +71,7 @@ defmodule Reporter.AppStore do
     %{}
 
   """
+  @spec category(String.t) :: String.t
   def category(json) do
     case json["feed"]["entry"] do
       nil -> %{}
@@ -96,6 +101,7 @@ defmodule Reporter.AppStore do
     %{}
 
   """
+  @spec reviews(String.t) :: String.t | Tuple.t
   def reviews(json) do
     case json["feed"]["entry"] do
       nil -> %{}
@@ -116,6 +122,7 @@ defmodule Reporter.AppStore do
     []
 
   """
+  @spec review_summaries(String.t) :: String.t
   def review_summaries(json) do
     json
     |> reviews
@@ -151,6 +158,7 @@ defmodule Reporter.AppStore do
 
 
   """
+  @spec icon(String.t) :: String.t
   def icon(json), do: json["feed"]["icon"]
 
   @doc ~S"""
@@ -164,6 +172,7 @@ defmodule Reporter.AppStore do
     iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.id
     %{"label" => "https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}
   """
+  @spec id(String.t) :: String.t
   def id(json), do: json["feed"]["id"]
 
   @doc ~S"""
@@ -197,6 +206,7 @@ defmodule Reporter.AppStore do
 
 
   """
+  @spec link(String.t) :: String.t
   def link(json), do: json["feed"]["link"]
 
   @doc ~S"""
@@ -211,6 +221,7 @@ defmodule Reporter.AppStore do
     %{"label" => "Copyright 2008 Apple Inc."}
 
   """
+  @spec rights(String.t) :: String.t
   def rights(json), do: json["feed"]["rights"]
 
   @doc ~S"""
@@ -225,6 +236,7 @@ defmodule Reporter.AppStore do
     %{"label" => "iTunes Store: Customer Reviews"}
 
   """
+  @spec title(String.t) :: String.t
   def title(json), do: json["feed"]["title"]
 
   @doc ~S"""
@@ -239,6 +251,7 @@ defmodule Reporter.AppStore do
     %{"label" => "2015-06-21T06:52:45-07:00"}
 
   """
+  @spec updated(String.t) :: String.t
   def updated(json), do: json["feed"]["updated"]
 
   @doc ~S"""

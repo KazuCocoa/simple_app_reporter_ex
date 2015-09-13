@@ -17,7 +17,7 @@ defmodule Reporter do
   "404"
 
   """
-  @spec app_store_rss_json!(String.t, String.t) :: JSON
+  @spec app_store_rss_json!(String.t, String.t) :: String.t
   def app_store_rss_json!(app_id, locale \\ "en") do
     headers = [{"Accept", "application/json; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_json(app_id, locale), headers)
@@ -34,7 +34,7 @@ defmodule Reporter do
   @doc """
   Get XML formatted response from Apple Server.
   """
-  @spec app_store_rss_xml!(String.t, String.t) :: XML
+  @spec app_store_rss_xml!(String.t, String.t) :: String.t
   def app_store_rss_xml!(app_id, locale \\ "en") do
     headers = [{"Accept", "application/xml; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_xml(app_id, locale), headers)

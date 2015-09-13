@@ -2,6 +2,7 @@ defmodule Reporter.GooglePlay do
   alias Reporter.GooglePlay
 
   defstruct droid_uri: Application.get_env(:reporter, :droid_uri)
+  @type t :: %GooglePlay{droid_uri: String.t}
 
   @doc ~S"""
   Return list of class 'single-review'.
@@ -67,6 +68,7 @@ defmodule Reporter.GooglePlay do
          {"target", "_blank"}], ["全文を表示"]}]}]}]}
 
   """
+  @spec reviews(String.t) :: String.t
   def reviews(parsed_html), do: Floki.find(parsed_html, ".single-review")
 
   @doc ~S"""
@@ -99,6 +101,7 @@ defmodule Reporter.GooglePlay do
 
 
    """
+   @spec review_infos(String.t) :: String.t
   def review_infos(parsed_html), do: Floki.find(parsed_html, ".review-info")
 
 
@@ -111,6 +114,7 @@ defmodule Reporter.GooglePlay do
             "body" => " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "}
 
   """
+  @spec review_summaries(String.t) :: String.t
   def review_summaries(parsed_html) do
     Floki.find(parsed_html, ".single-review")
     |> Enum.reduce([], fn(single, list) ->
@@ -156,6 +160,7 @@ defmodule Reporter.GooglePlay do
        {"target", "_blank"}], ["全文を表示"]}]}]}
 
   """
+  @spec review_bodies(String.t) :: String.t
   def review_bodies(parsed_html), do: Floki.find(parsed_html, ".review-body")
 
   @doc ~S"""
@@ -167,6 +172,7 @@ defmodule Reporter.GooglePlay do
   " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "
 
   """
+  @spec review_body_list(String.t) :: String.t
   def review_body_list(parsed_html) do
     Floki.find(parsed_html, ".review-body")
     |> Enum.reduce([], fn({_, _, review}, list) ->
@@ -187,6 +193,7 @@ defmodule Reporter.GooglePlay do
   {"span", [{"class", "review-title"}], ["不具合多すぎ"]}
 
   """
+  @spec review_titles(String.t) :: String.t
   def review_titles(parsed_html), do: Floki.find(parsed_html, ".review-title")
 
   @doc ~S"""
@@ -223,6 +230,7 @@ defmodule Reporter.GooglePlay do
   "おい、おい、"]
 
   """
+  @spec review_title_list(String.t) :: String.t
   def review_title_list(parsed_html) do
     Floki.find(parsed_html, ".review-title")
     |> Enum.reduce([], fn({_, _, review}, list) -> Enum.into(review, list) end)
