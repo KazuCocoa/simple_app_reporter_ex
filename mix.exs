@@ -31,7 +31,7 @@ defmodule Reporter.Mixfile do
       {:quinn, "~> 0.0.3"},
       {:floki, "~> 0.3"},
       {:earmark, "~> 0.1", only: :dev},
-      {:ex_doc, "~> 0.7", only: :dev},
+      {:ex_doc, "~> 0.9", only: :dev},
       {:dialyze, "~> 0.2.0", only: :dev}
     ]
   end
