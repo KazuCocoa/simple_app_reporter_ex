@@ -12,8 +12,8 @@ defmodule Reporter do
 
   error case
   ### Not found
-  iex> error = %{"message" => "not found.", "status_code" => "404"}
-  iex> error[:status_code]
+  iex> error = %{"message" => "Not found items.", "status_code" => "404"}
+  iex> error["status_code"]
   "404"
 
   """
@@ -22,14 +22,13 @@ defmodule Reporter do
     headers = [{"Accept", "application/json; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_json(app_id, locale), headers)
     |> get_body_json
-    |> Poison.decode!
   end
 
-  defp get_body_json({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
+  defp get_body_json({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body |> Poison.decode!
 
-  defp get_body_json({:ok, %HTTPoison.Response{status_code: 404}}), do: ~s({"status_code": "404", "message": "Not found items."})
+  defp get_body_json({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
 
-  defp get_body_json({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
+  defp get_body_json({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect |> Poison.decode! reason
 
   @doc """
   Get XML formatted response from Apple Server.
@@ -43,7 +42,7 @@ defmodule Reporter do
 
   defp get_body_xml({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
 
-  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 404}}), do: ~s({"status_code": "404", "message": "Not found items."})
+  defp get_body_xml({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
 
   defp get_body_xml({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 
@@ -54,8 +53,8 @@ defmodule Reporter do
 
   error case
   ### Not found
-  iex> error = [status_code: "404", message: "Not found items."]
-  iex> error[:status_code]
+  iex> error = %{"message" => "Not found items.", "status_code" => "404"}
+  iex> error["status_code"]
   "404"
 
   """
@@ -76,7 +75,12 @@ defmodule Reporter do
     |> Enum.drop(1)
   end
 
-  defp get_body({:ok, %HTTPoison.Response{status_code: 404}}), do: [status_code: "404", message: "Not found items."]
+  defp get_body({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
 
   defp get_body({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
+
+  defp error_404 do
+    Dict.put(%{}, "status_code", "404")
+    |> Dict.put("message", "Not found items.")
+  end
 end
