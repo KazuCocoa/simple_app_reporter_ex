@@ -39,7 +39,7 @@ defmodule Reporter.Mixfile do
   defp package do
     [
       files: ~w(lib config mix.exs README.md LICENSE VERSION),
-      contributors: ["Kazuaki Matsuo"],
+      maintainers: ["Kazuaki Matsuo"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/KazuCocoa/simple_app_reporter_ex"}
     ]
