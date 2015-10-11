@@ -7,6 +7,7 @@
 Support AppStore and GooglePlay.
 
 Hex is [here](https://hex.pm/packages/reporter)
+Doc is [here](http://hexdocs.pm/reporter/extra-api-reference.html)
 
 ## Installation
 
@@ -14,7 +15,7 @@ First, add Reporter to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:reporter, "~> 0.2.3"}]
+  [{:reporter, "~> 0.2.4"}]
 end
 ```
 
