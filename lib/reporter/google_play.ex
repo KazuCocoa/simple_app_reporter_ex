@@ -108,8 +108,8 @@ defmodule Reporter.GooglePlay do
   @doc ~S"""
   Return summary of reviews as List.
 
-  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
-  %{"date" => "2015年6月20日", "author" => "森本真治", "rating" => 1.0,
+    iex> File.read!("./test/data/google_post.html") |> Floki.parse  |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+    %{"date" => "2015年6月20日", "author" => "森本真治", "rating" => 1.0,
             "title" => "不具合多すぎ",
             "body" => " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "}
 
@@ -119,8 +119,18 @@ defmodule Reporter.GooglePlay do
     Floki.find(parsed_html, ".single-review")
     |> Enum.reduce([], fn(single, list) ->
 
+      # TODO: arrange a bit
+      # no name: {"span", [{"class", "author-name"}], ["  A Google User "]}
+      # has name: {"span", [{"class", "author-name"}],
+      #             [{"a", [{"href", "/store/people/details?id=113906718293225094082"}],
+      #               ["Chris Kapia"]}]}
       {_, _, name} = Floki.find(single, ".author-name") |> Enum.at(0)
-      {_, _, name} = Enum.at(name, 0)
+      case name do
+        [pri_name] when is_tuple(pri_name) ->
+          {_, _, name} = pri_name
+        [_] ->
+          name
+      end
 
       {_, _, date} = Floki.find(single, ".review-date") |> Enum.at(0)
 
@@ -129,7 +139,7 @@ defmodule Reporter.GooglePlay do
       body = Enum.at(body, 1)
 
       {_, rating, _} = Floki.find(single, ".current-rating") |> Enum.at(0)
-      {_, rating} = Enum.at(rating, 1)
+      {_, rating} = Enum.find(rating, fn x -> {type, _} = x; type == "style" end)
       rating = Regex.scan(~r/[0-9]+/, rating) |> List.flatten |> List.first |> String.to_integer
       rating = rating / 20
 
