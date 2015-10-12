@@ -1,7 +1,7 @@
 defmodule Reporter.GooglePlay do
   alias Reporter.GooglePlay
 
-  defstruct droid_uri: Application.get_env(:reporter, :droid_uri)
+  defstruct droid_uri: Application.get_env(:reporter, :droid_uri) || "https://play.google.com/store/getreviews"
   @type t :: %GooglePlay{droid_uri: String.t}
 
   @doc ~S"""

@@ -1,7 +1,7 @@
 defmodule Reporter.AppStore do
   alias Reporter.AppStore
 
-  defstruct host: Application.get_env(:reporter, :app_host)
+  defstruct host: Application.get_env(:reporter, :app_host) || "https://itunes.apple.com"
   @type t :: %AppStore{host: String.t}
 
   @doc """

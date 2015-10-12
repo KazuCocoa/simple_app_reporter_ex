@@ -91,5 +91,17 @@ iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.re
       {"target", "_blank"}], [" Full Review "]}]}]}
 ```
 
+# Customize app store url and google play one
+
+Generate `config/config.exs` and put the followings.
+
+```
+use Mix.Config
+
+config :reporter,
+  app_host: "https://itunes.apple.com",
+  droid_uri: "https://play.google.com/store/getreviews"
+```
+
 # LICENSE
 license is MIT
