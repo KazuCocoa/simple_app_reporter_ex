@@ -133,11 +133,11 @@ defmodule Reporter.AppStore do
       title = review["title"]["label"]
       body = review["content"]["label"]
 
-
-      result = Dict.put(%{}, "author", author)
-               |> Dict.put("rating", rating)
-               |> Dict.put("title", title)
-               |> Dict.put("body", body)
+      result = Map.new
+               |> Map.put("author", author)
+               |> Map.put("rating", rating)
+               |> Map.put("title", title)
+               |> Map.put("body", body)
 
       List.insert_at(list, 0, result)
     end)

@@ -27,7 +27,7 @@ and run `$ mix deps.get`.
 
 ```elixir
 # The following method provide us very useful summary.
-# You can get reviewed date, author, rating, title and body as Dict.
+# You can get reviewed date, author, rating, title and body as Map.
 iex> Reporter.app_store_rss_json!("375380948", "jp") |> Reporter.AppStore.review_summaries |> Enum.at(0)
 %{"author" => "m.aaa...", "rating" => "4", "title" => "あまり", "body" => "利便性がわかりずらい"}
 
@@ -73,7 +73,7 @@ iex> Reporter.app_store_rss_xml!("375380948", "jp")
 
 ```elixir
 # The following method provide us very useful summary.
-# You can get reviewed date, author, rating, title and body as Dict.
+# You can get reviewed date, author, rating, title and body as Map.
 iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
 %{"date" => "July 24, 2015", "author" => "Bobbins Francis", "rating" => 2.0, "title" => nil,
  "body" => " Crashing a lot lot lot😡😣 "}

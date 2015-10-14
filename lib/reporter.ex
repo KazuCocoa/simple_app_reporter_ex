@@ -80,7 +80,8 @@ defmodule Reporter do
   defp get_body({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 
   defp error_404 do
-    Dict.put(%{}, "status_code", "404")
-    |> Dict.put("message", "Not found items.")
+    Map.new
+    |> Map.put("status_code", "404")
+    |> Map.put("message", "Not found items.")
   end
 end

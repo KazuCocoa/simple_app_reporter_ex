@@ -143,11 +143,12 @@ defmodule Reporter.GooglePlay do
       rating = Regex.scan(~r/[0-9]+/, rating) |> List.flatten |> List.first |> String.to_integer
       rating = rating / 20
 
-      result = Dict.put(%{}, "date", Enum.at(date, 0))
-      |> Dict.put("author", Enum.at(name, 0))
-      |> Dict.put("rating", rating)
-      |> Dict.put("title", Enum.at(title, 0))
-      |> Dict.put("body", body)
+      result = Map.new
+               |> Map.put("date", Enum.at(date, 0))
+               |> Map.put("author", Enum.at(name, 0))
+               |> Map.put("rating", rating)
+               |> Map.put("title", Enum.at(title, 0))
+               |> Map.put("body", body)
 
       inspect list
       List.insert_at(list, -1, result)
