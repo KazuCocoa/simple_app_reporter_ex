@@ -15,7 +15,7 @@ First, add Reporter to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:reporter, "~> 0.2.5"}]
+  [{:reporter, "~> 0.2.6"}]
 end
 ```
 
