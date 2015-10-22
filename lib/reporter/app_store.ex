@@ -14,7 +14,10 @@ defmodule Reporter.AppStore do
   Return full XML via Quinn.parse(xml).
   """
   @spec all_xml(String.t) :: String.t
-  def all_xml(xml), do: Quinn.parse(xml)
+  def all_xml(xml) do
+    {:ok, feeder, _} = FeederEx.parse(xml)
+    feeder
+  end
 
   @doc ~S"""
   Returns collection of reviews.

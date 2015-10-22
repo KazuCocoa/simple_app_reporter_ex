@@ -7,6 +7,7 @@
 Support AppStore and GooglePlay.
 
 Hex is [here](https://hex.pm/packages/reporter)
+
 Doc is [here](http://hexdocs.pm/reporter/extra-api-reference.html)
 
 ## Installation
@@ -15,7 +16,9 @@ First, add Reporter to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:reporter, "~> 0.2.6"}]
+  [
+    {:reporter, "~> 0.3.0"}
+  ]
 end
 ```
 
@@ -66,7 +69,7 @@ Only implemented getting parsed XML.
 iex> Reporter.app_store_rss_xml!("375380948", "jp")
      |> Reporter.AppStore.all_xml
 
-# Return HTTP body.
+# Return XML based on FeederEx.
 ```
 
 ### Getting reviews from GooglePlay

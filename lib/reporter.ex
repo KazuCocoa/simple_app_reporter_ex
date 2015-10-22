@@ -37,7 +37,7 @@ defmodule Reporter do
   def app_store_rss_xml!(app_id, locale \\ "en") do
     headers = [{"Accept", "application/xml; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_xml(app_id, locale), headers)
-    |> get_body
+    |> get_body_xml
   end
 
   defp get_body_xml({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
