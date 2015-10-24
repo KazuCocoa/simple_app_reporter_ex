@@ -24,6 +24,16 @@ defmodule Reporter do
     |> get_body_json
   end
 
+  @spec app_store_rss_json(String.t, String.t) :: String.t
+  def app_store_rss_json(app_id, locale \\ "en") do
+    try do
+      result = app_store_rss_json!(app_id, locale)
+      {:ok, result}
+    rescue
+      e -> {:error, e.message}
+    end
+  end
+
   defp get_body_json({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body |> Poison.decode!
 
   defp get_body_json({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
@@ -38,6 +48,16 @@ defmodule Reporter do
     headers = [{"Accept", "application/xml; charset=UTF-8"}]
     HTTPoison.get(AppStore.rss_xml(app_id, locale), headers)
     |> get_body_xml
+  end
+
+  @spec app_store_rss_xml(String.t, String.t) :: String.t
+  def app_store_rss_xml(app_id, locale \\ "en") do
+    try do
+      result = app_store_rss_xml!(app_id, locale)
+      {:ok, result}
+    rescue
+      e -> {:error, e.message}
+    end
   end
 
   defp get_body_xml({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
@@ -64,6 +84,17 @@ defmodule Reporter do
     HTTPoison.post(GooglePlay.review_url(package, locale), "", headers)
     |> get_body
   end
+
+  @spec google_play(String.t, String.t) :: list
+  def google_play(package, locale \\ "en") do
+    try do
+      result = google_play!(package, locale)
+      {:ok, result}
+    rescue
+      e -> {:error, e.message}
+    end
+  end
+
 
   defp get_body({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
     body
