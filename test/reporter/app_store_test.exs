@@ -16,8 +16,8 @@ defmodule Reporter.AppStoreTest do
   end
 
   test "AppStore.author", %{json: json, empty: json_empty} do
-    author = AppStore.author(json) != nil
-    author = AppStore.author(json_empty) != nil
+    assert AppStore.author(json) != nil
+    assert AppStore.author(json_empty) != nil
   end
 
   test "AppStore.category", %{json: json, empty: json_empty} do

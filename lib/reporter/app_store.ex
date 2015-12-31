@@ -1,8 +1,7 @@
 defmodule Reporter.AppStore do
   alias Reporter.AppStore
 
-  defstruct host: Application.get_env(:reporter, :app_host) || "https://itunes.apple.com"
-  @type t :: %AppStore{host: String.t}
+  defp appstore_host, do: Application.get_env(:reporter, :app_host, "https://itunes.apple.com")
 
   @doc """
   Return full JSON map.
@@ -280,7 +279,7 @@ defmodule Reporter.AppStore do
 
   defp rss(app_id, locale, format) do
     Enum.join([
-      %AppStore{}.host,
+      appstore_host,
       "/",
       locale,
       "/rss/customerreviews/id=",

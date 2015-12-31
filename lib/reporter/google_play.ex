@@ -1,8 +1,6 @@
 defmodule Reporter.GooglePlay do
-  alias Reporter.GooglePlay
 
-  defstruct droid_uri: Application.get_env(:reporter, :droid_uri) || "https://play.google.com/store/getreviews"
-  @type t :: %GooglePlay{droid_uri: String.t}
+  defp droid_uri, do: Application.get_env(:reporter, :droid_uri, "https://play.google.com/store/getreviews")
 
   @doc ~S"""
   Return list of class 'single-review'.
@@ -98,8 +96,8 @@ defmodule Reporter.GooglePlay do
           [{"div",
             [{"class", "current-rating"}, {"style", "width: 40%;"}],
             []}]}]}]}
-   """
-   @spec review_infos(String.t) :: String.t
+  """
+  @spec review_infos(String.t) :: String.t
   def review_infos(parsed_html), do: Floki.find(parsed_html, ".review-info")
 
 
@@ -258,9 +256,7 @@ defmodule Reporter.GooglePlay do
 
   """
   @spec review_url(String.t, String.t) :: String.t
-  def review_url(droid_package, locale \\ "en") do
-    %GooglePlay{}.droid_uri <> "?" <> params(droid_package, locale)
-  end
+  def review_url(droid_package, locale \\ "en"), do: droid_uri <> "?" <> params(droid_package, locale)
 
   defp params(droid_package, locale \\ "en"), do: post_message(droid_package, "0", locale)
 
@@ -279,7 +275,7 @@ defmodule Reporter.GooglePlay do
   """
   @spec review_url_with_page(String.t, String.t, String.t) :: String.t
   def review_url_with_page(droid_package, page_num ,locale \\ "en") do
-    %GooglePlay{}.droid_uri <> "?" <> params_with_page(droid_package, page_num, locale)
+    droid_uri <> "?" <> params_with_page(droid_package, page_num, locale)
   end
 
   def params_with_page(droid_package, page_num, locale \\ "en"), do: post_message(droid_package, page_num, locale)
