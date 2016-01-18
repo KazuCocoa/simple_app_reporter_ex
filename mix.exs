@@ -27,7 +27,7 @@ defmodule Reporter.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8"},
-      {:poison, "~> 1.5"},
+      {:poison, "~> 2.0"},
       {:feeder_ex, "~> 0.0.2"},
       {:floki, "~> 0.7"},
       {:earmark, "~> 0.1", only: :dev},
