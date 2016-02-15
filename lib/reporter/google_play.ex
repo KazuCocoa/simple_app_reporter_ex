@@ -249,10 +249,10 @@ defmodule Reporter.GooglePlay do
   ## Examples
 
     iex> Reporter.GooglePlay.review_url("com.android.chrome")
-    "https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=0&hl=en"
+    "https://play.google.com/store/getreviews?id=com.android.chrome&xhr=1&reviewSortOrder=0&reviewType=1&pageNum=0&hl=en"
 
     iex> Reporter.GooglePlay.review_url("com.android.chrome", "jp")
-    "https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=0&hl=jp"
+    "https://play.google.com/store/getreviews?id=com.android.chrome&xhr=1&reviewSortOrder=0&reviewType=1&pageNum=0&hl=jp"
 
   """
   @spec review_url(String.t, String.t) :: String.t
@@ -267,10 +267,10 @@ defmodule Reporter.GooglePlay do
   ## Examples
 
     iex> Reporter.GooglePlay.review_url_with_page("com.android.chrome", "1")
-    "https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=1&hl=en"
+    "https://play.google.com/store/getreviews?id=com.android.chrome&xhr=1&reviewSortOrder=0&reviewType=1&pageNum=1&hl=en"
 
     iex> Reporter.GooglePlay.review_url_with_page("com.android.chrome", "10" , "jp")
-    "https://play.google.com/store/getreviews?id=com.android.chrome&reviewSortOrder=0&reviewType=1&pageNum=10&hl=jp"
+    "https://play.google.com/store/getreviews?id=com.android.chrome&xhr=1&reviewSortOrder=0&reviewType=1&pageNum=10&hl=jp"
 
   """
   @spec review_url_with_page(String.t, String.t, String.t) :: String.t
