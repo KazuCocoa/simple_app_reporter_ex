@@ -284,7 +284,7 @@ defmodule Reporter.GooglePlay do
     Enum.join([
       "id=",
       droid_package,
-      "&reviewSortOrder=0&reviewType=1&pageNum=",
+      "&xhr=1&reviewSortOrder=0&reviewType=1&pageNum=",
       page_num,
       "&hl=",
       locale
