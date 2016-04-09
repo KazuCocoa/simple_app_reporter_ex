@@ -36,7 +36,7 @@ defmodule Reporter do
 
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body |> Poison.decode!
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
-  defp get_body_json!({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect |> Poison.decode! reason
+  defp get_body_json!({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect |> Poison.decode!(reason)
 
   @doc """
   Get XML formatted response from Apple Server.

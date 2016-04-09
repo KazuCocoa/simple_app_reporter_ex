@@ -29,9 +29,9 @@ defmodule Reporter.Mixfile do
       {:httpoison, "~> 0.8"},
       {:poison, "~> 2.0"},
       {:feeder_ex, "~> 0.0.2"},
-      {:floki, "~> 0.7"},
+      {:floki, "~> 0.8"},
       {:earmark, "~> 0.1", only: :dev},
-      {:ex_doc, "~> 0.9", only: :dev},
+      {:ex_doc, "~> 0.11", only: :dev},
       {:dialyze, "~> 0.2.0", only: :dev}
     ]
   end
