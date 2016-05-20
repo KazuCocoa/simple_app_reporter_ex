@@ -105,7 +105,9 @@ defmodule Reporter.GooglePlay do
   Return summary of reviews as List.
 
       iex> File.read!("./test/data/google_post.html") |> Floki.parse  |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
-      %{"date" => "2015年6月20日", "author" => "森本真治", "rating" => 1.0,
+      %{"date" => "2015年6月20日", "author" => "森本真治",
+              "id" => "gp:AOqpTOG_ApTgL86SmNCfvsb9M_zf6KrN6SaZtJL40yOAD2GQxUzWS0XXjdEpOBsKHLMU1MHNj1Tfs27qlGN6GJw",
+              "rating" => 1.0,
               "title" => "不具合多すぎ",
               "body" => " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "}
 
@@ -139,12 +141,15 @@ defmodule Reporter.GooglePlay do
       rating = Regex.scan(~r/[0-9]+/, rating) |> List.flatten |> List.first |> String.to_integer
       rating = rating / 20
 
+      {_, [_, _, {_, id}], _} = Floki.find(single, ".review-header") |> Enum.at(0)
+
       result = Map.new
                |> Map.put("date", Enum.at(date, 0))
                |> Map.put("author", Enum.at(name, 0))
                |> Map.put("rating", rating)
                |> Map.put("title", Enum.at(title, 0))
                |> Map.put("body", body)
+               |> Map.put("id", id)
 
       inspect list
       List.insert_at(list, -1, result)
