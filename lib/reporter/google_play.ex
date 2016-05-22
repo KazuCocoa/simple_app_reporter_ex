@@ -110,7 +110,7 @@ defmodule Reporter.GooglePlay do
       %{"date" => "2015年6月20日", "author" => "森本真治",
               "author_link" => "https://play.google.com/store/people/details?id=104642741116962989509",
               "id" => "gp:AOqpTOG_ApTgL86SmNCfvsb9M_zf6KrN6SaZtJL40yOAD2GQxUzWS0XXjdEpOBsKHLMU1MHNj1Tfs27qlGN6GJw",
-              "parmlink" => "https://play.google.com/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPR19BcFRnTDg2U21OQ2Z2c2I5TV96ZjZLck42U2FadEpMNDB5T0FEMkdReFV6V1MwWFhqZEVwT0JzS0hMTVUxTUhOajFUZnMyN3FsR042R0p3",
+              "permalink" => "https://play.google.com/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPR19BcFRnTDg2U21OQ2Z2c2I5TV96ZjZLck42U2FadEpMNDB5T0FEMkdReFV6V1MwWFhqZEVwT0JzS0hMTVUxTUhOajFUZnMyN3FsR042R0p3",
               "rating" => 1.0,
               "title" => "不具合多すぎ",
               "body" => " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "}
@@ -147,7 +147,7 @@ defmodule Reporter.GooglePlay do
 
       {_, [_, _, {_, id}], _} = Floki.find(single, ".review-header") |> Enum.at(0)
 
-      {_, [_, {"href", parmlink}, _], []} = Floki.find(single, ".reviews-permalink") |> Enum.at(0)
+      {_, [_, {"href", permalink}, _], []} = Floki.find(single, ".reviews-permalink") |> Enum.at(0)
 
       result = Map.new
                |> Map.put("date", date)
@@ -157,7 +157,7 @@ defmodule Reporter.GooglePlay do
                |> Map.put("title", Enum.at(title, 0))
                |> Map.put("body", body)
                |> Map.put("id", id)
-               |> Map.put("parmlink", play_root <> parmlink)
+               |> Map.put("permalink", play_root <> permalink)
 
       List.insert_at(list, -1, result)
     end)

@@ -1,6 +1,6 @@
 # Changelog
 ## v5.0.0
-- add attributes of `author_link` and `parmlink` in `Reporter.GooglePlay.review_summaries/1`
+- add attributes of `author_link` and `permalink` in `Reporter.GooglePlay.review_summaries/1`
     - Please read readme if you'd like to know more.
 
 ### Breaking change
