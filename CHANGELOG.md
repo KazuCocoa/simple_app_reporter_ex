@@ -1,5 +1,9 @@
 # Changelog
-## v5.0.0
+## v0.5.1
+- Fix parsing some XML escaped charactors
+    - &, ", ', <, >
+
+## v0.5.0
 - add attributes of `author_link` and `permalink` in `Reporter.GooglePlay.review_summaries/1`
     - Please read readme if you'd like to know more.
 
