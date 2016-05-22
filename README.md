@@ -83,7 +83,7 @@ iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.re
   "body" => " It's really nice ",
   "date" => "May 22, 2016",
   "id" => "gp:AOqpTOHxPPI_l4M7AQy0djAtdTgDlgJUASN_rzS9tSelR6bQfN4cwRtYFNqjzTzzJX_qJeTXwQkNW4Ucsn1eJFk",
-  "permalink" => "https://play.google.com/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPSHhQUElfbDRNN0FReTBkakF0ZFRnRGxnSlVBU05fcnpTOXRTZWxSNmJRZk40Y3dSdFlGTnFqelR6ekpYX3FKZVRYd1FrTlc0VWNzbjFlSkZr",
+  "permalink" => "https://play.google.com/store/apps/details?id=com.android.chrome&reviewId=Z3A6QU9xcFRPSHhQUElfbDRNN0FReTBkakF0ZFRnRGxnSlVBU05fcnpTOXRTZWxSNmJRZk40Y3dSdFlGTnFqelR6ekpYX3FKZVRYd1FrTlc0VWNzbjFlSkZr",
   "rating" => 5.0,
   "title" => "Good"}
 
