@@ -17,7 +17,7 @@ First, add Reporter to your `mix.exs` dependencies:
 ```elixir
 def deps do
   [
-    {:reporter, "~> 0.4.1"}
+    {:reporter, "~> 0.5.0"}
   ]
 end
 ```
@@ -78,8 +78,14 @@ iex> Reporter.app_store_rss_xml!("375380948", "jp")
 # The following method provide us very useful summary.
 # You can get reviewed date, author, rating, title and body as Map.
 iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
-%{"date" => "July 24, 2015", "author" => "Bobbins Francis", "rating" => 2.0, "title" => nil,
- "body" => " Crashing a lot lot lot😡😣 "}
+%{"author" => "Kinoshanth Kino",
+  "author_link" => "https://play.google.com/store/people/details?id=108550484713070099642",
+  "body" => " It's really nice ",
+  "date" => "May 22, 2016",
+  "id" => "gp:AOqpTOHxPPI_l4M7AQy0djAtdTgDlgJUASN_rzS9tSelR6bQfN4cwRtYFNqjzTzzJX_qJeTXwQkNW4Ucsn1eJFk",
+  "parmlink" => "https://play.google.com/store/apps/details?id=com.android.chromeu0026amp;reviewId=Z3A6QU9xcFRPSHhQUElfbDRNN0FReTBkakF0ZFRnRGxnSlVBU05fcnpTOXRTZWxSNmJRZk40Y3dSdFlGTnFqelR6ekpYX3FKZVRYd1FrTlc0VWNzbjFlSkZr",
+  "rating" => 5.0,
+  "title" => "Good"}
 
 iex> Reporter.google_play!("com.android.chrome", "en") |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
 " Crashing a lot lot lot😡😣 "
@@ -103,7 +109,7 @@ use Mix.Config
 
 config :reporter,
   app_host: "https://itunes.apple.com",
-  droid_uri: "https://play.google.com/store/getreviews"
+  play_host: "https://play.google.com"
 ```
 
 # LICENSE
