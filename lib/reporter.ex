@@ -24,7 +24,7 @@ defmodule Reporter do
     |> get_body_json!
   end
 
-  @spec app_store_rss_json(String.t, String.t) :: String.t
+  @spec app_store_rss_json(String.t, String.t) :: {:error, String.t} | {:ok, String.t}
   def app_store_rss_json(app_id, locale \\ "en") do
     try do
       result = app_store_rss_json!(app_id, locale)
@@ -36,7 +36,7 @@ defmodule Reporter do
 
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body |> Poison.decode!
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
-  defp get_body_json!({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect |> Poison.decode!(reason)
+  defp get_body_json!({:error, %HTTPoison.Error{reason: reason}}), do: Poison.decode!(reason)
 
   @doc """
   Get XML formatted response from Apple Server.
@@ -48,7 +48,7 @@ defmodule Reporter do
     |> get_body_xml!
   end
 
-  @spec app_store_rss_xml(String.t, String.t) :: String.t
+  @spec app_store_rss_xml(String.t, String.t) :: {:error, String.t} | {:ok, String.t}
   def app_store_rss_xml(app_id, locale \\ "en") do
     try do
       result = app_store_rss_xml!(app_id, locale)
@@ -74,17 +74,17 @@ defmodule Reporter do
   "404"
 
   """
-  @spec google_play!(String.t, String.t, Integer.t) :: list
+  @spec google_play!(String.t, String.t, Integer.t) :: list | map() | String.t
   def google_play!(package, locale \\ "en", page_num \\ 0) do
     headers = [{"Accept", "text/html; charset=UTF-8"}]
     HTTPoison.post(GooglePlay.review_url_with_page(package, page_num, locale), "", headers)
     |> get_body!
   end
 
-  @spec google_play(String.t, String.t) :: list
-  def google_play(package, locale \\ "en") do
+  @spec google_play(String.t, String.t, Integer.t) :: {:ok, list} | {:error, String.t}
+  def google_play(package, locale \\ "en", page_num \\ 0) do
     try do
-      result = google_play!(package, locale)
+      result = google_play!(package, locale, page_num)
       {:ok, result}
     rescue
       e -> {:error, e.message}
@@ -102,7 +102,7 @@ defmodule Reporter do
     |> Enum.drop(1)
   end
   defp get_body!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
-  defp get_body!({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
+  defp get_body!({:error, %HTTPoison.Error{reason: reason}}), do: reason
 
   defp error_404 do
     Map.new

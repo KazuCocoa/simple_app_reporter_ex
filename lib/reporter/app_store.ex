@@ -27,11 +27,11 @@ defmodule Reporter.AppStore do
       %{"name" => %{"label" => "iTunes Store"},
         "uri" => %{"label" => "http://www.apple.com/jp/itunes/"}}
 
-        iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.author
-        %{"name" => %{"label" => "iTunes Store"},
-          "uri" => %{"label" => "http://www.apple.com/itunes/"}}
+      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.author
+      %{"name" => %{"label" => "iTunes Store"},
+        "uri" => %{"label" => "http://www.apple.com/itunes/"}}
   """
-  @spec author(String.t) :: String.t
+  @spec author(Parser.t) :: map()
   def author(json), do: json["feed"]["author"]
 
   @doc ~S"""
@@ -70,7 +70,7 @@ defmodule Reporter.AppStore do
       iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.category
       %{}
   """
-  @spec category(String.t) :: String.t
+  @spec category(Parser.t) :: map()
   def category(json) do
     case json["feed"]["entry"] do
       nil -> %{}
@@ -99,7 +99,7 @@ defmodule Reporter.AppStore do
       iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.reviews
       %{}
   """
-  @spec reviews(String.t) :: String.t | Tuple.t
+  @spec reviews(Parser.t) :: map() | [map()] | map()
   def reviews(json) do
     case json["feed"]["entry"] do
       nil -> %{}
@@ -119,7 +119,7 @@ defmodule Reporter.AppStore do
       iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.review_summaries
       []
   """
-  @spec review_summaries(String.t) :: String.t
+  @spec review_summaries(Parser.t) :: [map()] | []
   def review_summaries(json) do
     json
     |> reviews
@@ -153,7 +153,7 @@ defmodule Reporter.AppStore do
       iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.icon
       %{"label" => "http://itunes.apple.com/favicon.ico"}
   """
-  @spec icon(String.t) :: String.t
+  @spec icon(Parser.t) :: map()
   def icon(json), do: json["feed"]["icon"]
 
   @doc ~S"""
@@ -167,7 +167,7 @@ defmodule Reporter.AppStore do
       iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.id
       %{"label" => "https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}
   """
-  @spec id(String.t) :: String.t
+  @spec id(Parser.t) :: map()
   def id(json), do: json["feed"]["id"]
 
   @doc ~S"""
@@ -201,7 +201,7 @@ defmodule Reporter.AppStore do
 
 
   """
-  @spec link(String.t) :: String.t
+  @spec link(Parser.t) :: [map()] | []
   def link(json), do: json["feed"]["link"]
 
   @doc ~S"""
@@ -216,7 +216,7 @@ defmodule Reporter.AppStore do
     %{"label" => "Copyright 2008 Apple Inc."}
 
   """
-  @spec rights(String.t) :: String.t
+  @spec rights(Parser.t) :: map()
   def rights(json), do: json["feed"]["rights"]
 
   @doc ~S"""
@@ -231,7 +231,7 @@ defmodule Reporter.AppStore do
     %{"label" => "iTunes Store: Customer Reviews"}
 
   """
-  @spec title(String.t) :: String.t
+  @spec title(Parser.t) :: map()
   def title(json), do: json["feed"]["title"]
 
   @doc ~S"""
@@ -246,7 +246,7 @@ defmodule Reporter.AppStore do
     %{"label" => "2015-06-21T06:52:45-07:00"}
 
   """
-  @spec updated(String.t) :: String.t
+  @spec updated(Parser.t) :: map()
   def updated(json), do: json["feed"]["updated"]
 
   @doc ~S"""

@@ -270,8 +270,8 @@ defmodule Reporter.GooglePlay do
   """
   @spec review_url(String.t, String.t) :: String.t
   def review_url(droid_package, locale \\ "en"), do: play_root <> @reviews_path <> "?" <> params(droid_package, locale)
-  defp params(droid_package, locale \\ "en"), do: post_message(droid_package, "0", locale)
 
+  defp params(droid_package, locale), do: post_message(droid_package, "0", locale)
 
   @doc ~S"""
   Return POST message with paging.
