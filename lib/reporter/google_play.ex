@@ -127,12 +127,14 @@ defmodule Reporter.GooglePlay do
       #             [{"a", [{"href", "/store/people/details?id=113906718293225094082"}],
       #               ["Chris Kapia"]}]}
       {_ , _, name} = Floki.find(single, ".author-name") |> Enum.at(0)
-      case name do
-        [pri_name] when is_tuple(pri_name) ->
-          {_, [{"href", auth_link}], [name]} = pri_name
-        [_] ->
-          name
-      end
+
+      {_, [{"href", auth_link}], [author_name]} =
+        case name do
+          [pri_name] when is_tuple(pri_name) ->
+            pri_name
+          [_] ->
+            {"", [{"href", ""}], [name]}
+        end
 
       {_, _, [date]} = Floki.find(single, ".review-date") |> Enum.at(0)
 
@@ -152,7 +154,7 @@ defmodule Reporter.GooglePlay do
 
       result = Map.new
                |> Map.put("date", date)
-               |> Map.put("author", name)
+               |> Map.put("author", author_name)
                |> Map.put("author_link", play_root <> auth_link)
                |> Map.put("rating", rating)
                |> Map.put("title", Enum.at(title, 0))
