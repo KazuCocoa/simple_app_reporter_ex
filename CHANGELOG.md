@@ -1,4 +1,7 @@
 # Changelog
+## v0.5.2
+- Fix some warning ofElixir 1.3
+
 ## v0.5.1
 - Fix parsing some XML escaped charactors
     - &, ", ', <, >
