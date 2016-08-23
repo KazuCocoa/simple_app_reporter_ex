@@ -1,5 +1,4 @@
 defmodule Reporter.AppStore do
-  alias Reporter.AppStore
 
   defp appstore_host, do: Application.get_env(:reporter, :app_host, "https://itunes.apple.com")
 
@@ -289,6 +288,5 @@ defmodule Reporter.AppStore do
       ]
     ) |> URI.encode
   end
-
-  # Reporter.AppStore.all_xml(File.read!("test/data/ios_review_empty.xml"))
 end
+
