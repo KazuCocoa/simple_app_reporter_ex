@@ -7,7 +7,7 @@ defmodule Reporter.GooglePlay do
   @doc ~S"""
   Return list of class 'single-review'.
 
-      iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.reviews |> Enum.at(0)
+      iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.reviews |> Enum.at(0)
       {"div", [{"class", "single-review"}],
       [{"a", [{"href", "/store/people/details?id=104642741116962989509"}],
         [{"img",
@@ -76,7 +76,7 @@ defmodule Reporter.GooglePlay do
 
   ## Example
 
-      iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_infos |> Enum.at(3)
+      iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_infos |> Enum.at(3)
       {"div", [{"class", "review-info"}],
       [{"span", [{"class", "author-name"}],
         [{"a",
@@ -106,7 +106,7 @@ defmodule Reporter.GooglePlay do
   @doc ~S"""
   Return summary of reviews as List.
 
-      iex> File.read!("./test/data/google_post.html") |> Floki.parse  |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
+      iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse  |> Enum.drop(1) |> Reporter.GooglePlay.review_summaries |> Enum.at(0)
       %{"date" => "2015年6月20日", "author" => "森本真治",
               "author_link" => "https://play.google.com/store/people/details?id=104642741116962989509",
               "id" => "gp:AOqpTOG_ApTgL86SmNCfvsb9M_zf6KrN6SaZtJL40yOAD2GQxUzWS0XXjdEpOBsKHLMU1MHNj1Tfs27qlGN6GJw",
@@ -172,7 +172,7 @@ defmodule Reporter.GooglePlay do
 
   ## Example
 
-  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
+  iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_bodies |> Enum.at(1)
   {"div", [{"class", "review-body"}],
   [{"span", [{"class", "review-title"}], ["Android5版"]},
    " なぜか「すべてのタブを閉じる」がありません。それ以外は満足です。 ",
@@ -190,7 +190,7 @@ defmodule Reporter.GooglePlay do
 
   ## Example
 
-  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
+  iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_body_list |> Enum.at(0)
   " 戻るがきかない、軽いのがうりなのにどんどん重くなるなど微妙につかえないブラウザになってます…数ヶ月まったく治らないのでいい加減見限ろうかと。 "
 
   """
@@ -211,7 +211,7 @@ defmodule Reporter.GooglePlay do
 
   ## Example
 
-  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_titles |> Enum.at(0)
+  iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_titles |> Enum.at(0)
   {"span", [{"class", "review-title"}], ["不具合多すぎ"]}
 
   """
@@ -223,7 +223,7 @@ defmodule Reporter.GooglePlay do
 
   ## Example
 
-  iex> File.read!("./test/data/google_post.html") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_title_list
+  iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_title_list
   ["不具合多すぎ",
   "Android5版",
   "開いていたタブが消える",

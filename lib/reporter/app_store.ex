@@ -22,11 +22,11 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.author
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.author
       %{"name" => %{"label" => "iTunes Store"},
         "uri" => %{"label" => "http://www.apple.com/jp/itunes/"}}
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.author
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.author
       %{"name" => %{"label" => "iTunes Store"},
         "uri" => %{"label" => "http://www.apple.com/itunes/"}}
   """
@@ -38,7 +38,7 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.category
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.category
       %{"category" => %{"attributes" => %{"im:id" => "6012",
             "label" => "ライフスタイル",
             "scheme" => "https://itunes.apple.com/jp/genre/ios-raifusutairu/id6012?mt=8&uo=2",
@@ -66,7 +66,7 @@ defmodule Reporter.AppStore do
         "rights" => %{"label" => "© 2015 Apple Inc."},
         "title" => %{"label" => "Apple Store - Apple"}}
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.category
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.category
       %{}
   """
   @spec category(Parser.t) :: map()
@@ -82,7 +82,7 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.reviews |> Enum.at(0)
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.reviews |> Enum.at(0)
       %{"author" => %{"label" => "", "name" => %{"label" => "m.aaa..."},
         "uri" => %{"label" => "https://itunes.apple.com/jp/reviews/id451145371"}},
         "content" => %{"attributes" => %{"type" => "text"},
@@ -95,7 +95,7 @@ defmodule Reporter.AppStore do
         "link" => %{"attributes" => %{"href" => "https://itunes.apple.com/jp/review?id=375380948&type=Purple%20Software",
         "rel" => "related"}}, "title" => %{"label" => "あまり"}}
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.reviews
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.reviews
       %{}
   """
   @spec reviews(Parser.t) :: map() | [map()] | map()
@@ -112,10 +112,10 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.review_summaries |> Enum.at(0)
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.review_summaries |> Enum.at(0)
       %{"author" => "m.aaa...", "rating" => "4", "title" => "あまり", "body" => "利便性がわかりずらい"}
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.review_summaries
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.review_summaries
       []
   """
   @spec review_summaries(Parser.t) :: [map()] | []
@@ -145,11 +145,11 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.icon
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.icon
       %{"label" => "http://itunes.apple.com/favicon.ico"}
 
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.icon
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.icon
       %{"label" => "http://itunes.apple.com/favicon.ico"}
   """
   @spec icon(Parser.t) :: map()
@@ -160,10 +160,10 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-      iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.id
+      iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.id
       %{"label" => "https://itunes.apple.com/jp/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}
 
-      iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.id
+      iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.id
       %{"label" => "https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json"}
   """
   @spec id(Parser.t) :: map()
@@ -174,7 +174,7 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.link
+    iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.link
     [%{"attributes" => %{"href" => "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=jp&id=26105",
                     "rel" => "alternate", "type" => "text/html"}},
                 %{"attributes" => %{"href" => "https://itunes.apple.com/jp/rss/customerreviews/id=375380948/sortby=mostrecent/json",
@@ -188,7 +188,7 @@ defmodule Reporter.AppStore do
                 %{"attributes" => %{"href" => "https://itunes.apple.com/jp/rss/customerreviews/page=2/id=375380948/sortby=mostrecent/xml?urlDesc=/customerreviews/id=375380948/sortby=mostrecent/json",
                     "rel" => "next"}}]
 
-    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.link
+    iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.link
     [%{"attributes" => %{"href" => "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=38",
                     "rel" => "alternate", "type" => "text/html"}},
                 %{"attributes" => %{"href" => "https://itunes.apple.com/en/rss/customerreviews/id%3d375380948/sortby%3dmostrecent/json",
@@ -208,10 +208,10 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.rights
+    iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.rights
     %{"label" => "Copyright 2008 Apple Inc."}
 
-    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.rights
+    iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.rights
     %{"label" => "Copyright 2008 Apple Inc."}
 
   """
@@ -223,10 +223,10 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.title
+    iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.title
     %{"label" => "iTunes Store: カスタマーレビュー"}
 
-    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.title
+    iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.title
     %{"label" => "iTunes Store: Customer Reviews"}
 
   """
@@ -238,10 +238,10 @@ defmodule Reporter.AppStore do
 
   ## Examples
 
-    iex> File.read!("./test/data/ios_review.json") |> Poison.decode! |> Reporter.AppStore.updated
+    iex> File.stream!("./test/data/ios_review.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.updated
     %{"label" => "2015-06-18T07:17:49-07:00"}
 
-    iex> File.read!("./test/data/ios_review_empty.json") |> Poison.decode! |> Reporter.AppStore.updated
+    iex> File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode! |> Reporter.AppStore.updated
     %{"label" => "2015-06-21T06:52:45-07:00"}
 
   """
@@ -289,4 +289,3 @@ defmodule Reporter.AppStore do
     ) |> URI.encode
   end
 end
-

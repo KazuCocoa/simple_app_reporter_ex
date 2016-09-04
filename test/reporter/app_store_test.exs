@@ -5,8 +5,8 @@ defmodule Reporter.AppStoreTest do
   alias Reporter.AppStore
 
   setup_all do
-    json = File.read!("./test/data/ios_review.json") |> Poison.decode!
-    json_empty = File.read!("./test/data/ios_review_empty.json") |> Poison.decode!
+    json = File.stream!("./test/data/ios_review.json", [], :line) |> Enum.into("") |> Poison.decode!
+    json_empty = File.stream!("./test/data/ios_review_empty.json") |> Enum.into("") |> Poison.decode!
     {:ok, json: json, empty: json_empty}
   end
 
