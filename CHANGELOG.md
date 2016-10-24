@@ -1,4 +1,7 @@
 # Changelog
+## v0.5.3
+update dependencies
+
 ## v0.5.2
 - Fix some warning ofElixir 1.3
 
