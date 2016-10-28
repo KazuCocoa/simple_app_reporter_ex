@@ -7,7 +7,7 @@ defmodule Reporter.Mixfile do
     [
       app: :reporter,
       version: @version,
-      elixir: "~> 1.0",
+      elixir: "~> 1.1",
       name: "Reporter",
       source_url: "https://github.com/KazuCocoa/simple_app_reporter_ex",
       description: "Simple getting reviews library from AppStore and GooglePlay",
