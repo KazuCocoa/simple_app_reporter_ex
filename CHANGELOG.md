@@ -1,4 +1,7 @@
 # Changelog
+## v0.6.0
+- Support over Elixir 1.1.0
+
 ## v0.5.4
 - Use `URI` to generate URL
 
