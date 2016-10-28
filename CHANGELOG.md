@@ -1,6 +1,9 @@
 # Changelog
+## v0.5.4
+- Use `URI` to generate URL
+
 ## v0.5.3
-update dependencies
+- update dependencies
 
 ## v0.5.2
 - Fix some warning ofElixir 1.3
