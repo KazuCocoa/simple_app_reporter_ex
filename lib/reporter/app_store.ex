@@ -1,6 +1,6 @@
 defmodule Reporter.AppStore do
 
-  defp appstore_host, do: Application.get_env(:reporter, :app_host, "https://itunes.apple.com")
+  defp appstore_host(), do: Application.get_env(:reporter, :app_host, "https://itunes.apple.com")
 
   @doc """
   Return full JSON map.
@@ -121,7 +121,7 @@ defmodule Reporter.AppStore do
   @spec review_summaries(Parser.t) :: [map()] | []
   def review_summaries(json) do
     json
-    |> reviews
+    |> reviews()
     |> Enum.reverse
     |> Enum.reduce([], fn (review, list) ->
       author = review["author"]["name"]["label"]

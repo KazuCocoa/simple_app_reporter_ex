@@ -2,7 +2,7 @@ defmodule Reporter.GooglePlay do
 
   @reviews_path "/store/getreviews"
 
-  defp play_root, do: Application.get_env(:reporter, :play_host, "https://play.google.com")
+  defp play_root(), do: Application.get_env(:reporter, :play_host, "https://play.google.com")
 
   @doc ~S"""
   Return list of class 'single-review'.
@@ -155,12 +155,12 @@ defmodule Reporter.GooglePlay do
       result = Map.new
                |> Map.put("date", date)
                |> Map.put("author", author_name)
-               |> Map.put("author_link", play_root <> auth_link)
+               |> Map.put("author_link", play_root() <> auth_link)
                |> Map.put("rating", rating)
                |> Map.put("title", Enum.at(title, 0))
                |> Map.put("body", body)
                |> Map.put("id", id)
-               |> Map.put("permalink", play_root <> permalink)
+               |> Map.put("permalink", play_root() <> permalink)
 
       List.insert_at(list, -1, result)
     end)
@@ -271,7 +271,13 @@ defmodule Reporter.GooglePlay do
 
   """
   @spec review_url(String.t, String.t) :: String.t
-  def review_url(droid_package, locale \\ "en"), do: play_root <> @reviews_path <> "?" <> params(droid_package, locale)
+  def review_url(droid_package, locale \\ "en") do
+    play_root()
+    |> URI.parse()
+    |> Map.put(:path, @reviews_path)
+    |> Map.put(:query, params(droid_package, locale))
+    |> URI.to_string()
+  end
 
   defp params(droid_package, locale), do: post_message(droid_package, "0", locale)
 
@@ -289,7 +295,11 @@ defmodule Reporter.GooglePlay do
   """
   @spec review_url_with_page(String.t, String.t, String.t) :: String.t
   def review_url_with_page(droid_package, page_num ,locale \\ "en") do
-    play_root <> @reviews_path <> "?" <> params_with_page(droid_package, page_num, locale)
+    play_root()
+    |> URI.parse()
+    |> Map.put(:path, @reviews_path)
+    |> Map.put(:query, params_with_page(droid_package, page_num, locale))
+    |> URI.to_string()
   end
 
   def params_with_page(droid_package, page_num, locale \\ "en"), do: post_message(droid_package, page_num, locale)

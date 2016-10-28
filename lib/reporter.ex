@@ -1,8 +1,8 @@
 defmodule Reporter do
-
-  # defmacro __using__(_) do
-  #
-  # end
+  @moduledoc """
+  `Reporter` is simple reporting App reviews library.
+  Support AppStore and GooglePlay.
+  """
 
   alias Reporter.AppStore
   alias Reporter.GooglePlay
