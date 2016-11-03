@@ -1,4 +1,7 @@
 # Changelog
+## v0.6.1
+- use `certifi` 0.4.0 to avoid ssl error
+
 ## v0.6.0
 - Support over Elixir 1.1.0
 
