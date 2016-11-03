@@ -1,4 +1,7 @@
 # Changelog
+## v0.6.3
+- add 400 error handling
+
 ## v0.6.2
   - fix google play's author name is blank case
 
