@@ -1,4 +1,7 @@
 # Changelog
+## v0.6.2
+  - fix google play's author name is blank case
+
 ## v0.6.1
 - use `certifi` 0.4.0 to avoid ssl error
 
