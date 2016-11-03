@@ -78,10 +78,7 @@ defmodule Reporter.GooglePlay do
 
       iex> File.stream!("./test/data/google_post.html") |> Enum.into("") |> Floki.parse |> Enum.drop(1) |> Reporter.GooglePlay.review_infos |> Enum.at(3)
       {"div", [{"class", "review-info"}],
-      [{"span", [{"class", "author-name"}],
-        [{"a",
-          [{"href", "/store/people/details?id=117395283570537705728"}],
-          ["Kiriya Nachi"]}]},
+      [{"span", [{"class", "author-name"}], []},
        {"span", [{"class", "review-date"}], ["2015年6月20日"]},
        {"a",
         [{"class", "reviews-permalink"},
@@ -132,6 +129,8 @@ defmodule Reporter.GooglePlay do
         case name do
           [pri_name] when is_tuple(pri_name) ->
             pri_name
+          [] ->
+            {"", [{"href", ""}], ["no name"]}
           [_] ->
             {"", [{"href", ""}], [name]}
         end
