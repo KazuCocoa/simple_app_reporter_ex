@@ -35,6 +35,7 @@ defmodule Reporter do
   end
 
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body |> Poison.decode!
+  defp get_body_json!({:ok, %HTTPoison.Response{status_code: 400}}), do: error_400
   defp get_body_json!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
   defp get_body_json!({:error, %HTTPoison.Error{reason: reason}}), do: Poison.decode!(reason)
 
@@ -59,6 +60,7 @@ defmodule Reporter do
   end
 
   defp get_body_xml!({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: body
+  defp get_body_xml!({:ok, %HTTPoison.Response{status_code: 400}}), do: error_400
   defp get_body_xml!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
   defp get_body_xml!({:error, %HTTPoison.Error{reason: reason}}), do: IO.inspect reason
 
@@ -101,8 +103,15 @@ defmodule Reporter do
     |> Floki.parse
     |> Enum.drop(1)
   end
+  defp get_body!({:ok, %HTTPoison.Response{status_code: 400}}), do: error_400
   defp get_body!({:ok, %HTTPoison.Response{status_code: 404}}), do: error_404
   defp get_body!({:error, %HTTPoison.Error{reason: reason}}), do: reason
+
+  defp error_400 do
+    Map.new
+    |> Map.put("status_code", "400")
+    |> Map.put("message", "Bad Request")
+  end
 
   defp error_404 do
     Map.new
