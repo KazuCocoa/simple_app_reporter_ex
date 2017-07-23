@@ -27,9 +27,9 @@ defmodule Reporter.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8"},
-      {:certifi, "~> 0.4.0"}, # because certifi 0.7.0 failed to extablish connection with SSL
+      # {:certifi, "~> 0.4.0"}, # because certifi 0.7.0 failed to extablish connection with SSL
       {:poison, "~> 3.0"},
-      {:feeder_ex, "~> 0.0.2"},
+      {:feeder_ex, "~> 1.0"},
       {:floki, "~> 0.8"},
       {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.11", only: :dev},
