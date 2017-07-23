@@ -1,4 +1,8 @@
 # Changelog
+## v0.7.0: Jul 23, 2017
+- update dependencies
+- Support Elixir 1.4+
+
 ## v0.6.3
 - add 400 error handling
 
