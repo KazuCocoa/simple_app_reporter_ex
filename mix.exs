@@ -1,7 +1,7 @@
 defmodule Reporter.Mixfile do
   use Mix.Project
 
-  @version File.read!("VERSION") |> String.strip
+  @version File.read!("VERSION") |> String.trim
 
   def project do
     [
@@ -13,14 +13,14 @@ defmodule Reporter.Mixfile do
       description: "Simple getting reviews library from AppStore and GooglePlay",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps,
-      package: package
+      deps: deps(),
+      package: package()
      ]
   end
 
   def application do
     [
-      applications: [:httpoison, :poison]
+      extra_applications: []
     ]
   end
 
@@ -28,11 +28,11 @@ defmodule Reporter.Mixfile do
     [
       {:httpoison, "~> 0.8"},
       {:poison, "~> 3.0"},
-      {:feeder_ex, "~> 1.0"},
-      {:floki, "~> 0.8"},
-      {:earmark, "~> 1.0", only: :dev},
-      {:ex_doc, "~> 0.11", only: :dev},
-      {:dialyze, "~> 0.2.0", only: :dev}
+      {:feeder_ex, "~> 1.0", runtime: false},
+      {:floki, "~> 0.8", runtime: false},
+      {:earmark, "~> 1.0", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.11", only: :dev, runtime: false},
+      {:dialyze, "~> 0.2.0", only: :dev, runtime: false}
     ]
   end
 

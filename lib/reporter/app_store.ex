@@ -278,7 +278,7 @@ defmodule Reporter.AppStore do
 
   defp rss(app_id, locale, format) do
     Enum.join([
-      appstore_host,
+      appstore_host(),
       "/",
       locale,
       "/rss/customerreviews/id=",
